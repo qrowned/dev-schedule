@@ -1,6 +1,6 @@
 {
-  "stages": {
-    "mainStage": {
+  "stages": [
+    {
       "name": "Main Stage",
       "talks": [
         {
@@ -43,9 +43,6 @@
           "tags": ["Digital Transformation", "Business Strategy"],
           "webExLink": "https://example.com/webex-link"
         },
-        
-
-        
         {
           "title": "Day 1 Closing Talk 1",
           "description": "Building High-Performing Teams: Strategies for Success",
@@ -86,8 +83,6 @@
           "tags": ["Future of Work", "Change Management"],
           "webExLink": "https://example.com/webex-link"
         },
-
-        
         {
           "title": "Day 2 Opening Keynote",
           "description": "The Power of Innovation: Transforming Industries",
@@ -128,9 +123,6 @@
           "tags": ["Storytelling", "Communication"],
           "webExLink": "https://example.com/webex-link"
         },
-        
-
-        
         {
           "title": "Day 2 Closing Talk 1",
           "description": "The Ethics of Artificial Intelligence: Challenges and Responsibilities",
@@ -173,7 +165,7 @@
         }
       ]
     },
-    "backendStage": {
+    {
       "name": "Backend Stage",
       "talks": [
         {
@@ -256,7 +248,6 @@
           "tags": ["API Security", "OAuth 2.0", "Authentication"],
           "webExLink": "https://example.com/webex-link"
         },
-        
         {
           "title": "Building Serverless Applications with AWS Lambda",
           "description": "Explore the serverless architecture paradigm and learn how to build scalable and cost-effective applications using AWS Lambda.",
@@ -294,7 +285,11 @@
             }
           ],
           "time": "Day 2, 12:00 - 13:00",
-          "tags": ["Microservices", "Event-Driven Architecture", "Apache Kafka"],
+          "tags": [
+            "Microservices",
+            "Event-Driven Architecture",
+            "Apache Kafka"
+          ],
           "webExLink": "https://example.com/webex-link"
         },
         {
@@ -317,7 +312,6 @@
           "tags": ["Backend Development", "GraphQL", "Real-Time APIs"],
           "webExLink": "https://example.com/webex-link"
         },
-        
         {
           "title": "Building Distributed Systems with Apache Cassandra",
           "description": "Learn about Apache Cassandra, a highly scalable and distributed database. Discover how to design and build distributed systems using Cassandra.",
@@ -335,13 +329,16 @@
             }
           ],
           "time": "Day 2, 14:00 - 15:00",
-          "tags": ["Backend Development", "Distributed Systems", "Apache Cassandra"],
+          "tags": [
+            "Backend Development",
+            "Distributed Systems",
+            "Apache Cassandra"
+          ],
           "webExLink": "https://example.com/webex-link"
         }
-        
       ]
     },
-    "frontendStage": {
+    {
       "name": "Frontend Stage",
       "talks": [
         {
@@ -424,7 +421,6 @@
           "tags": ["Frontend Development", "Redux", "State Management"],
           "webExLink": "https://example.com/webex-link"
         },
-        
         {
           "title": "Introduction to Web Components",
           "description": "Learn about Web Components, a set of web platform APIs that allow you to create reusable custom elements with encapsulated functionality.",
@@ -462,7 +458,11 @@
             }
           ],
           "time": "Day 2, 11:00 - 12:00",
-          "tags": ["Progressive Web Apps", "Web Development", "Offline Capabilities"],
+          "tags": [
+            "Progressive Web Apps",
+            "Web Development",
+            "Offline Capabilities"
+          ],
           "webExLink": "https://example.com/webex-link"
         },
         {
@@ -482,7 +482,11 @@
             }
           ],
           "time": "Day 2, 12:00 - 13:00",
-          "tags": ["Frontend Development", "Vue.js", "Component-based Architecture"],
+          "tags": [
+            "Frontend Development",
+            "Vue.js",
+            "Component-based Architecture"
+          ],
           "webExLink": "https://example.com/webex-link"
         },
         {
@@ -505,7 +509,6 @@
           "tags": ["Web Performance", "User Experience", "Optimization"],
           "webExLink": "https://example.com/webex-link"
         },
-        
         {
           "title": "State Management in React with Redux Toolkit",
           "description": "Learn how to manage application state in React using Redux Toolkit. Discover Redux Toolkit's simplified API and built-in features for efficient state management.",
@@ -526,10 +529,9 @@
           "tags": ["Frontend Development", "React", "State Management"],
           "webExLink": "https://example.com/webex-link"
         }
-        
       ]
     },
-    "devOpsStage": {
+    {
       "name": "DevOps Stage",
       "talks": [
         {
@@ -612,7 +614,6 @@
           "tags": ["DevOps", "Monitoring", "Observability"],
           "webExLink": "https://example.com/webex-link"
         },
-        
         {
           "title": "Container Orchestration with Kubernetes",
           "description": "Learn about container orchestration with Kubernetes. Discover how to deploy, scale, and manage containerized applications in a Kubernetes cluster.",
@@ -693,7 +694,6 @@
           "tags": ["DevOps", "Application Monitoring", "ELK Stack"],
           "webExLink": "https://example.com/webex-link"
         },
-        
         {
           "title": "Infrastructure Orchestration with HashiCorp Consul",
           "description": "Learn how to orchestrate and connect services in a distributed environment using HashiCorp Consul. Discover service discovery, health checking, and dynamic configuration management.",
@@ -711,12 +711,16 @@
             }
           ],
           "time": "Day 2, 14:00 - 15:00",
-          "tags": ["DevOps", "Infrastructure Orchestration", "HashiCorp Consul"],
+          "tags": [
+            "DevOps",
+            "Infrastructure Orchestration",
+            "HashiCorp Consul"
+          ],
           "webExLink": "https://example.com/webex-link"
         }
       ]
     },
-    "aiStage": {
+    {
       "name": "AI Stage",
       "talks": [
         {
@@ -736,7 +740,11 @@
             }
           ],
           "time": "Day 1, 14:00 - 15:00",
-          "tags": ["Artificial Intelligence", "Natural Language Processing", "Chatbots"],
+          "tags": [
+            "Artificial Intelligence",
+            "Natural Language Processing",
+            "Chatbots"
+          ],
           "webExLink": "https://example.com/webex-link"
         },
         {
@@ -756,7 +764,11 @@
             }
           ],
           "time": "Day 1, 11:00 - 12:00",
-          "tags": ["Artificial Intelligence", "Computer Vision", "Image Classification"],
+          "tags": [
+            "Artificial Intelligence",
+            "Computer Vision",
+            "Image Classification"
+          ],
           "webExLink": "https://example.com/webex-link"
         },
         {
@@ -776,7 +788,11 @@
             }
           ],
           "time": "Day 1, 12:00 - 13:00",
-          "tags": ["Artificial Intelligence", "Natural Language Processing", "Text Analytics"],
+          "tags": [
+            "Artificial Intelligence",
+            "Natural Language Processing",
+            "Text Analytics"
+          ],
           "webExLink": "https://example.com/webex-link"
         },
         {
@@ -796,10 +812,13 @@
             }
           ],
           "time": "Day 1, 13:00 - 14:00",
-          "tags": ["Artificial Intelligence", "Generative Adversarial Networks", "Machine Learning"],
+          "tags": [
+            "Artificial Intelligence",
+            "Generative Adversarial Networks",
+            "Machine Learning"
+          ],
           "webExLink": "https://example.com/webex-link"
         },
-        
         {
           "title": "Reinforcement Learning: From Theory to Practice",
           "description": "Explore the fundamentals of reinforcement learning and learn how to apply it to train intelligent agents in various domains. Discover different algorithms and techniques.",
@@ -817,7 +836,11 @@
             }
           ],
           "time": "Day 1, 14:00 - 15:00",
-          "tags": ["Artificial Intelligence", "Reinforcement Learning", "Machine Learning"],
+          "tags": [
+            "Artificial Intelligence",
+            "Reinforcement Learning",
+            "Machine Learning"
+          ],
           "webExLink": "https://example.com/webex-link"
         },
         {
@@ -837,7 +860,11 @@
             }
           ],
           "time": "Day 2, 11:00 - 12:00",
-          "tags": ["Artificial Intelligence", "Deep Learning", "Convolutional Neural Networks"],
+          "tags": [
+            "Artificial Intelligence",
+            "Deep Learning",
+            "Convolutional Neural Networks"
+          ],
           "webExLink": "https://example.com/webex-link"
         },
         {
@@ -857,7 +884,11 @@
             }
           ],
           "time": "Day 2, 12:00 - 13:00",
-          "tags": ["Artificial Intelligence", "Natural Language Processing", "Transformers"],
+          "tags": [
+            "Artificial Intelligence",
+            "Natural Language Processing",
+            "Transformers"
+          ],
           "webExLink": "https://example.com/webex-link"
         },
         {
@@ -877,10 +908,13 @@
             }
           ],
           "time": "Day 2, 13:00 - 14:00",
-          "tags": ["Artificial Intelligence", "Reinforcement Learning", "Deep Q-Networks"],
+          "tags": [
+            "Artificial Intelligence",
+            "Reinforcement Learning",
+            "Deep Q-Networks"
+          ],
           "webExLink": "https://example.com/webex-link"
         },
-        
         {
           "title": "Transfer Learning in Deep Neural Networks",
           "description": "Learn how to leverage transfer learning to apply pre-trained deep neural networks to new tasks. Explore different transfer learning approaches and use cases.",
@@ -898,12 +932,14 @@
             }
           ],
           "time": "Day 2, 14:00 - 15:00",
-          "tags": ["Artificial Intelligence", "Transfer Learning", "Deep Neural Networks"],
+          "tags": [
+            "Artificial Intelligence",
+            "Transfer Learning",
+            "Deep Neural Networks"
+          ],
           "webExLink": "https://example.com/webex-link"
         }
-        
       ]
     }
-    
-  }
+  ]
 }
