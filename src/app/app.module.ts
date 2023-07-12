@@ -20,37 +20,44 @@ import { NxModalModule } from '@aposin/ng-aquila/modal';
 import { NxOverlayModule } from '@aposin/ng-aquila/overlay';
 import { NxPopoverModule } from '@aposin/ng-aquila/popover';
 import { NxSmallStageModule } from '@aposin/ng-aquila/small-stage';
+import { NxSpinnerModule } from '@aposin/ng-aquila/spinner';
+import { NxHeaderModule } from '@aposin/ng-aquila/header';
 
 import { AppComponent } from './app.component';
+import { CommonModule, DatePipe } from '@angular/common';
 
 @NgModule({
-    declarations: [AppComponent],
-    imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
-        FormsModule,
-        HttpClientJsonpModule,
-        HttpClientModule,
-        ReactiveFormsModule,
-        RouterModule.forRoot([]),
-        NxButtonModule,
-        NxCheckboxModule,
-        NxDocumentationIconModule,
-        NxDropdownModule,
-        NxFooterModule,
-        NxFormfieldModule,
-        NxGridModule,
-        NxHeadlineModule,
-        NxIconModule,
-        NxInputModule,
-        NxLinkModule,
-        NxMessageModule,
-        NxModalModule,
-        NxOverlayModule,
-        NxPopoverModule,
-        NxSmallStageModule,
-    ],
-    bootstrap: [AppComponent],
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpClientJsonpModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot([]),
+    NxButtonModule,
+    NxCheckboxModule,
+    NxDocumentationIconModule,
+    NxDropdownModule,
+    NxFooterModule,
+    NxFormfieldModule,
+    NxGridModule,
+    NxHeadlineModule,
+    NxIconModule,
+    NxInputModule,
+    NxLinkModule,
+    NxMessageModule,
+    NxModalModule,
+    NxOverlayModule,
+    NxPopoverModule,
+    NxSmallStageModule,
+    NxSpinnerModule,
+    NxHeaderModule,
+    CommonModule,
+  ],
+  providers: [DatePipe],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
 

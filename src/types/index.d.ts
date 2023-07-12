@@ -24,3 +24,8 @@ export interface Presenter {
 export interface SocialMedia {
   [name: string]: string;
 }
+
+export interface Day {
+  id: number;
+  date: Date;
+}

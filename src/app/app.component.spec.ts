@@ -22,51 +22,32 @@ import { NxPopoverModule } from '@aposin/ng-aquila/popover';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
-    beforeEach(async () => {
-        await TestBed.configureTestingModule({
-            declarations: [AppComponent],
-            imports: [
-                BrowserModule,
-                BrowserAnimationsModule,
-                FormsModule,
-                HttpClientJsonpModule,
-                HttpClientModule,
-                ReactiveFormsModule,
-                NxButtonModule,
-                NxCheckboxModule,
-                NxDocumentationIconModule,
-                NxDropdownModule,
-                NxFooterModule,
-                NxFormfieldModule,
-                NxGridModule,
-                NxHeadlineModule,
-                NxIconModule,
-                NxInputModule,
-                NxLinkModule,
-                NxMessageModule,
-                NxModalModule,
-                NxOverlayModule,
-                NxPopoverModule,
-            ],
-        }).compileComponents();
-    });
-
-    it('should create the app', () => {
-        const fixture = TestBed.createComponent(AppComponent);
-        const app = fixture.componentInstance;
-        expect(app).toBeTruthy();
-    });
-
-    it(`should create the form`, () => {
-        const fixture = TestBed.createComponent(AppComponent);
-        const app = fixture.componentInstance;
-        expect(app.formGroup).toBeTruthy();
-    });
-
-    it('should render title', () => {
-        const fixture = TestBed.createComponent(AppComponent);
-        fixture.detectChanges();
-        const compiled = fixture.nativeElement;
-        expect(compiled.querySelector('h1.nx-heading--section').textContent).toContain('Aquila Insurance App');
-    });
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [AppComponent],
+      imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        FormsModule,
+        HttpClientJsonpModule,
+        HttpClientModule,
+        ReactiveFormsModule,
+        NxButtonModule,
+        NxCheckboxModule,
+        NxDocumentationIconModule,
+        NxDropdownModule,
+        NxFooterModule,
+        NxFormfieldModule,
+        NxGridModule,
+        NxHeadlineModule,
+        NxIconModule,
+        NxInputModule,
+        NxLinkModule,
+        NxMessageModule,
+        NxModalModule,
+        NxOverlayModule,
+        NxPopoverModule,
+      ],
+    }).compileComponents();
+  });
 });

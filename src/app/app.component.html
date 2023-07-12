@@ -1,8 +1,28 @@
 <div class="starter-app">
-  <h1>Stages</h1>
-  <ul>
-    <li *ngFor="let stage of Stages">{{ stage.name }}</li>
-  </ul>
+  <header nx-header>
+    <nx-header-navigation *ngIf="days" class="center">
+      <nx-header-navigation-item *ngFor="let day of days"
+        ><a
+          routerLink="./"
+          [queryParams]="{ id: day.id }"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLinkActive="is-active"
+          [skipLocationChange]="true"
+          nxHeaderLink
+          >Day {{ day.id }}</a
+        ></nx-header-navigation-item
+      >
+    </nx-header-navigation>
+  </header>
+  <h1 class="center">{{ formatCurrentDate() }}</h1>
+  <div *ngIf="stages">
+    <ul>
+      <li *ngFor="let stage of stages">{{ stage.name }}</li>
+    </ul>
+  </div>
+  <div *ngIf="!stages">
+    <nx-spinner size="large"></nx-spinner>
+  </div>
 </div>
 
 <!-- Copyright Allianz 2023 -->
