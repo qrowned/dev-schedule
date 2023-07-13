@@ -21,7 +21,7 @@
           </div>
           <ng-container *ngFor="let time of times">
             <div nxRow>
-              <div nxCol="2">{{ time }}</div>
+              <div nxCol="2" class="time">{{ time }}</div>
               <ng-container *ngFor="let stage of stages">
                 <div nxCol="2">
                   <ng-container *ngIf="getTalkByStageAndTime(stage, day, time)">
