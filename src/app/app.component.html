@@ -8,58 +8,9 @@
       <div class="tab__content">
         <h1 class="center">{{ formatCurrentDate(day) }}</h1>
       </div>
-      <div
-        *ngIf="stages && days"
-        class="scroll-container tab__content table-outline"
-      >
-        <div nxGrid class="timetable-grid">
-          <div nxRow>
-            <div nxCol="2"></div>
-            <ng-container *ngFor="let stage of stages">
-              <div nxCol="2" class="stage-heading">{{ stage.name }}</div>
-            </ng-container>
-          </div>
-          <ng-container *ngFor="let time of times">
-            <div nxRow>
-              <div nxCol="2" class="time">{{ time }}</div>
-              <ng-container *ngFor="let stage of stages">
-                <div nxCol="2">
-                  <ng-container *ngIf="getTalkByStageAndTime(stage, day, time)">
-                    <div
-                      class="button talk-details"
-                      (click)="
-                        openTalkDialog(getTalkByStageAndTime(stage, day, time))
-                      "
-                    >
-                      <h4>
-                        {{ getTalkByStageAndTime(stage, day, time)?.title }}
-                      </h4>
-                      <p>
-                        {{
-                          getTalkByStageAndTime(stage, day, time)?.description
-                        }}
-                      </p>
-                    </div>
-                  </ng-container>
-                </div>
-              </ng-container>
-            </div>
-          </ng-container>
-        </div>
-      </div>
+      <app-schedule-grid [day]="day" [stages]="stages" [times]="times" />
     </nx-tab>
   </nx-tab-group>
 </div>
-
-<ng-template #template let-data>
-  <div>
-    <p>{{ formatPresenterNames(data.presenters) }}</p>
-    <h3 nxHeadline="subsection-medium">
-      {{ data.title }}
-    </h3>
-    <p nxCopytext>{{ data.description }}</p>
-    <nx-badge *ngFor="let tag of data.tags">{{ tag }}</nx-badge>
-  </div>
-</ng-template>
 
 <!-- Copyright Allianz 2023 -->

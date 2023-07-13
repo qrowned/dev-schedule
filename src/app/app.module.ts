@@ -27,9 +27,10 @@ import { NxTabsModule } from '@aposin/ng-aquila/tabs';
 import { AppComponent } from './app.component';
 import { CommonModule, DatePipe } from '@angular/common';
 import { NxBadgeModule } from '@aposin/ng-aquila/badge';
+import { ScheduleGridComponent } from './schedule-grid/schedule-grid.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ScheduleGridComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
