@@ -25,15 +25,13 @@
               <ng-container *ngFor="let stage of stages">
                 <div nxCol="2">
                   <ng-container *ngIf="getTalkByStageAndTime(stage, day, time)">
-                    <div class="talk-details">
-                      <h4
-                        class="button"
-                        (click)="
-                          openTalkDialog(
-                            getTalkByStageAndTime(stage, day, time)
-                          )
-                        "
-                      >
+                    <div
+                      class="button talk-details"
+                      (click)="
+                        openTalkDialog(getTalkByStageAndTime(stage, day, time))
+                      "
+                    >
+                      <h4>
                         {{ getTalkByStageAndTime(stage, day, time)?.title }}
                       </h4>
                       <p>

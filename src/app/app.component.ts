@@ -113,7 +113,12 @@ export class AppComponent implements OnInit {
   }
 
   formatPresenterNames(presenters: Presenter[]): string {
-    return presenters.map((presenter: Presenter) => presenter.name).join(', ');
+    return presenters
+      .map(
+        (presenter: Presenter) =>
+          presenter.name + ' (' + presenter.company + ')'
+      )
+      .join(', ');
   }
 }
 
