@@ -1,14 +1,5 @@
-import {
-  Component,
-  Inject,
-  OnInit,
-  LOCALE_ID,
-  ViewChild,
-  TemplateRef,
-  ChangeDetectorRef,
-} from '@angular/core';
-import { Day, Presenter, Stage, Talk } from 'src/types';
-import { NxDialogService, NxModalRef } from '@aposin/ng-aquila/modal';
+import { Component, Inject, OnInit, LOCALE_ID } from '@angular/core';
+import { Day, Stage } from 'src/types';
 
 import { HttpClient } from '@angular/common/http';
 import { DatePipe, formatDate } from '@angular/common';

@@ -12,6 +12,7 @@
   "stages": [
     {
       "name": "Main Stage",
+      "color": "red_bg",
       "talks": [
         {
           "title": "Day 1 Opening Keynote",
@@ -178,6 +179,7 @@
     },
     {
       "name": "Backend Stage",
+      "color": "light_green_bg",
       "talks": [
         {
           "title": "Scaling Microservices with Kubernetes",
@@ -351,6 +353,7 @@
     },
     {
       "name": "Frontend Stage",
+      "color": "dark_green_bg",
       "talks": [
         {
           "title": "Building Progressive Web Apps with React",
@@ -544,6 +547,7 @@
     },
     {
       "name": "DevOps Stage",
+      "color": "yellow_bg",
       "talks": [
         {
           "title": "Infrastructure as Code with Terraform",
@@ -733,6 +737,7 @@
     },
     {
       "name": "AI Stage",
+      "color": "orange_bg",
       "talks": [
         {
           "title": "Natural Language Processing for Chatbots",

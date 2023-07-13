@@ -21,3 +21,28 @@
 nx-badge {
   margin: 8px;
 }
+
+.red_bg {
+  background-color: #f62459;
+}
+
+.light_green_bg {
+  background-color: #5fcd8a;
+}
+
+.dark_green_bg {
+  background-color: #00908d;
+}
+
+.yellow_bg {
+  background-color: #fab600;
+}
+
+.orange_bg {
+  background-color: #f86200;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}

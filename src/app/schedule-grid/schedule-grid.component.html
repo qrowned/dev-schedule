@@ -3,7 +3,7 @@
     <div nxRow>
       <div nxCol="2"></div>
       <ng-container *ngFor="let stage of stages">
-        <div nxCol="2" class="stage-heading">{{ stage.name }}</div>
+        <div nxCol="2" class="stage-heading center">{{ stage.name }}</div>
       </ng-container>
     </div>
     <ng-container *ngFor="let time of times">
@@ -13,6 +13,7 @@
           <div nxCol="2">
             <ng-container *ngIf="getTalkByStageAndTime(stage, day, time)">
               <div
+                [class]="stage.color"
                 class="button talk-details"
                 (click)="
                   openTalkDialog(getTalkByStageAndTime(stage, day, time))
