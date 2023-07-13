@@ -5,6 +5,9 @@
       [label]="'Day ' + day.id.toString()"
       disabled="false"
     >
+      <div class="tab__content">
+        <h1 class="center">{{ formatCurrentDate(day) }}</h1>
+      </div>
       <div
         *ngIf="stages && days"
         class="scroll-container tab__content table-outline"
@@ -13,7 +16,7 @@
           <div nxRow>
             <div nxCol="2"></div>
             <ng-container *ngFor="let stage of stages">
-              <div nxCol="2">{{ stage.name }}</div>
+              <div nxCol="2" class="stage-heading">{{ stage.name }}</div>
             </ng-container>
           </div>
           <ng-container *ngFor="let time of times">
