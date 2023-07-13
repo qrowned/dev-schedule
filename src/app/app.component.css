@@ -20,3 +20,7 @@ figure {
   overflow-x: auto;
   display: block;
 }
+
+.timetable-grid {
+  margin: 40px;
+}

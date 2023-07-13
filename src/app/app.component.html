@@ -5,19 +5,22 @@
       [label]="'Day ' + day.id.toString()"
       disabled="false"
     >
-      <div *ngIf="stages && days" class="scroll-container tab__content">
-        <table nxGrid class="timetable-grid">
-          <tr nxRow>
-            <th nxCell></th>
+      <div
+        *ngIf="stages && days"
+        class="scroll-container tab__content table-outline"
+      >
+        <div nxGrid class="timetable-grid">
+          <div nxRow>
+            <div nxCol="2"></div>
             <ng-container *ngFor="let stage of stages">
-              <th nxCell>{{ stage.name }}</th>
+              <div nxCol="2">{{ stage.name }}</div>
             </ng-container>
-          </tr>
+          </div>
           <ng-container *ngFor="let time of times">
-            <tr nxRow>
-              <th nxCell>{{ time }}</th>
+            <div nxRow>
+              <div nxCol="2">{{ time }}</div>
               <ng-container *ngFor="let stage of stages">
-                <td nxCell>
+                <div nxCol="2">
                   <ng-container *ngIf="getTalkByStageAndTime(stage, day, time)">
                     <div class="talk-details">
                       <h4>
@@ -30,11 +33,11 @@
                       </p>
                     </div>
                   </ng-container>
-                </td>
+                </div>
               </ng-container>
-            </tr>
+            </div>
           </ng-container>
-        </table>
+        </div>
       </div>
     </nx-tab>
   </nx-tab-group>
