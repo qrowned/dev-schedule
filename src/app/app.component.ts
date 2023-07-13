@@ -41,13 +41,11 @@ export class AppComponent implements OnInit {
     });
   }
 
-  formatCurrentDate(): string {
-    if (!this.currentDay) return '';
-
+  formatCurrentDate(day: Day): string {
     return (
-      this.datePipe.transform(this.currentDay.date, 'EEE') +
+      this.datePipe.transform(day.date, 'EEE') +
       ', ' +
-      formatDate(this.currentDay.date, 'dd.MM.yyyy', this.locale)
+      formatDate(day.date, 'dd.MM.yyyy', this.locale)
     );
   }
 }

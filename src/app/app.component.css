@@ -7,8 +7,8 @@ figure {
   align-items: center;
 }
 
-.logo-text {
-  color: var(--text-01, #ffffff);
+.tab__content {
+  padding-top: 16px;
 }
 
 .center {

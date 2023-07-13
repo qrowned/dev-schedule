@@ -22,6 +22,7 @@ import { NxPopoverModule } from '@aposin/ng-aquila/popover';
 import { NxSmallStageModule } from '@aposin/ng-aquila/small-stage';
 import { NxSpinnerModule } from '@aposin/ng-aquila/spinner';
 import { NxHeaderModule } from '@aposin/ng-aquila/header';
+import { NxTabsModule } from '@aposin/ng-aquila/tabs';
 
 import { AppComponent } from './app.component';
 import { CommonModule, DatePipe } from '@angular/common';
@@ -55,6 +56,7 @@ import { CommonModule, DatePipe } from '@angular/common';
     NxSpinnerModule,
     NxHeaderModule,
     CommonModule,
+    NxTabsModule,
   ],
   providers: [DatePipe],
   bootstrap: [AppComponent],
