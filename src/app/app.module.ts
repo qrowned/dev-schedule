@@ -26,6 +26,7 @@ import { NxTabsModule } from '@aposin/ng-aquila/tabs';
 
 import { AppComponent } from './app.component';
 import { CommonModule, DatePipe } from '@angular/common';
+import { NxBadgeModule } from '@aposin/ng-aquila/badge';
 
 @NgModule({
   declarations: [AppComponent],
@@ -57,6 +58,7 @@ import { CommonModule, DatePipe } from '@angular/common';
     NxHeaderModule,
     CommonModule,
     NxTabsModule,
+    NxBadgeModule,
   ],
   providers: [DatePipe],
   bootstrap: [AppComponent],

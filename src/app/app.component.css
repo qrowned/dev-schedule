@@ -36,3 +36,11 @@ figure {
   align-items: center;
   justify-content: center;
 }
+
+.button {
+  cursor: pointer;
+}
+
+nx-badge {
+  margin: 8px;
+}

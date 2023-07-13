@@ -1,5 +1,14 @@
-import { Component, Inject, OnInit, LOCALE_ID } from '@angular/core';
-import { Day, Stage, Talk } from 'src/types';
+import {
+  Component,
+  Inject,
+  OnInit,
+  LOCALE_ID,
+  ViewChild,
+  TemplateRef,
+  ChangeDetectorRef,
+} from '@angular/core';
+import { Day, Presenter, Stage, Talk } from 'src/types';
+import { NxDialogService, NxModalRef } from '@aposin/ng-aquila/modal';
 
 import { HttpClient } from '@angular/common/http';
 import { DatePipe, formatDate } from '@angular/common';
@@ -23,14 +32,19 @@ const times = [
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
+  @ViewChild('template') templateRef!: TemplateRef<any>;
   stages?: Stage[];
   days?: Day[];
   times = times;
 
+  dialogRef?: NxModalRef<any>;
+
   constructor(
     @Inject(LOCALE_ID) public locale: string,
     private http: HttpClient,
-    private datePipe: DatePipe
+    private datePipe: DatePipe,
+    private readonly dialogService: NxDialogService,
+    private readonly _cdr: ChangeDetectorRef
   ) {}
 
   ngOnInit(): void {
@@ -82,6 +96,24 @@ export class AppComponent implements OnInit {
         }
       })
       .find((talk) => talk.time.includes(time));
+  }
+
+  openTalkDialog(talk: Talk | undefined): void {
+    if (!talk) return;
+
+    const dialogRef = this.dialogService.open(this.templateRef, {
+      showCloseIcon: true,
+      data: talk,
+      ariaLabelledBy: 'talk-dialog',
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log(result);
+    });
+  }
+
+  formatPresenterNames(presenters: Presenter[]): string {
+    return presenters.map((presenter: Presenter) => presenter.name).join(', ');
   }
 }
 
