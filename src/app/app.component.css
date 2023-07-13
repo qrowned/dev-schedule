@@ -15,3 +15,8 @@ figure {
   display: flex;
   justify-content: center;
 }
+
+.scroll-container {
+  overflow-x: auto;
+  display: block;
+}

@@ -30,6 +30,7 @@
             }
           ],
           "time": "Day 1, 09:00 - 10:00",
+          "day": 1,
           "tags": ["Keynote", "Technology Trends"],
           "webExLink": "https://example.com/webex-link"
         },

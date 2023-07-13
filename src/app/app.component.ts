@@ -2,8 +2,20 @@ import { Component, Inject, OnInit, LOCALE_ID } from '@angular/core';
 import { Day, Stage, Talk } from 'src/types';
 
 import { HttpClient } from '@angular/common/http';
-import { ActivatedRoute } from '@angular/router';
 import { DatePipe, formatDate } from '@angular/common';
+
+const times = [
+  '9:00 - 10:00',
+  '10:00 - 11:00',
+  '11:00 - 12:00',
+  '12:00 - 13:00',
+  '13:00 - 14:00',
+  '14:00 - 15:00',
+  '15:00 - 16:00',
+  '16:00 - 17:00',
+  '17:00 - 18:00',
+  '18:00 - 19:00',
+];
 
 @Component({
   selector: 'app-root',
@@ -13,12 +25,11 @@ import { DatePipe, formatDate } from '@angular/common';
 export class AppComponent implements OnInit {
   stages?: Stage[];
   days?: Day[];
-  currentDay?: Day;
+  times = times;
 
   constructor(
     @Inject(LOCALE_ID) public locale: string,
     private http: HttpClient,
-    private route: ActivatedRoute,
     private datePipe: DatePipe
   ) {}
 
@@ -30,14 +41,6 @@ export class AppComponent implements OnInit {
     this.http.get('assets/data.json').subscribe((data: any) => {
       this.days = data.days;
       this.stages = data.stages;
-
-      this.route.queryParamMap.subscribe((params) => {
-        const id: string | null = params.get('id');
-        const day: Day | undefined = this.days?.find(
-          (day) => day.id.toString() == id
-        );
-        this.currentDay = day ? day : this.days?.at(0);
-      });
     });
   }
 
@@ -47,6 +50,38 @@ export class AppComponent implements OnInit {
       ', ' +
       formatDate(day.date, 'dd.MM.yyyy', this.locale)
     );
+  }
+
+  // Fetch every talks from the stages variable which happen on a certain day and return them as an array
+  getTalksByDay(day: Day): Talk[] | undefined {
+    return this.stages
+      ?.map((stage) => stage.talks)
+      .flat()
+      .filter((talk) => {
+        try {
+          let dayId: string = talk.time.split(',')[0].split(' ')[1];
+          return dayId === day.id.toString();
+        } catch (error) {
+          return;
+        }
+      });
+  }
+
+  getTalkByStageAndTime(
+    stage: Stage,
+    day: Day,
+    time: string
+  ): Talk | undefined {
+    return stage.talks
+      .filter((talk) => {
+        try {
+          let dayId: string = talk.time.split(',')[0].split(' ')[1];
+          return dayId === day.id.toString();
+        } catch (error) {
+          return;
+        }
+      })
+      .find((talk) => talk.time.includes(time));
   }
 }
 
