@@ -23,6 +23,7 @@ import { NxSmallStageModule } from '@aposin/ng-aquila/small-stage';
 import { NxSpinnerModule } from '@aposin/ng-aquila/spinner';
 import { NxHeaderModule } from '@aposin/ng-aquila/header';
 import { NxTabsModule } from '@aposin/ng-aquila/tabs';
+import { NxCardModule } from '@aposin/ng-aquila/card';
 
 import { AppComponent } from './app.component';
 import { CommonModule, DatePipe } from '@angular/common';
@@ -60,6 +61,7 @@ import { ScheduleGridComponent } from './schedule-grid/schedule-grid.component';
     CommonModule,
     NxTabsModule,
     NxBadgeModule,
+    NxCardModule,
   ],
   providers: [DatePipe],
   bootstrap: [AppComponent],

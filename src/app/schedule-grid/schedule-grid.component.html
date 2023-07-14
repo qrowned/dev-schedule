@@ -12,20 +12,20 @@
         <ng-container *ngFor="let stage of stages">
           <div nxCol="2">
             <ng-container *ngIf="getTalkByStageAndTime(stage, day, time)">
-              <div
+              <nx-card
                 [class]="stage.color"
-                class="button talk-details"
+                class="button talk-card"
                 (click)="
                   openTalkDialog(getTalkByStageAndTime(stage, day, time))
                 "
               >
-                <h4>
+                <h3>
                   {{ getTalkByStageAndTime(stage, day, time)?.title }}
-                </h4>
+                </h3>
                 <p>
                   {{ getTalkByStageAndTime(stage, day, time)?.description }}
                 </p>
-              </div>
+              </nx-card>
             </ng-container>
           </div>
         </ng-container>
