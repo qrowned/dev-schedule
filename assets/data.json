@@ -1,0 +1,961 @@
+{
+  "days": [
+    {
+      "id": 1,
+      "date": "2023-07-17"
+    },
+    {
+      "id": 2,
+      "date": "2023-07-18"
+    }
+  ],
+  "stages": [
+    {
+      "name": "Main Stage",
+      "color": "red_bg",
+      "talks": [
+        {
+          "title": "Day 1 Opening Keynote",
+          "description": "The Future of Technology: Trends and Innovations",
+          "presenters": [
+            {
+              "name": "John Doe",
+              "email": "john.doe@example.com",
+              "bio": "John Doe is a technology visionary with over 15 years of experience...",
+              "company": "ABC Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/johndoe",
+                "linkedin": "https://linkedin.com/in/johndoe"
+              },
+              "picture": "https://example.com/johndoe.jpg"
+            }
+          ],
+          "time": "Day 1, 09:00 - 10:00",
+          "day": 1,
+          "tags": ["Keynote", "Technology Trends"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Day 1 Main Stage Talk 2",
+          "description": "Digital Transformation: Strategies for Success",
+          "presenters": [
+            {
+              "name": "Jane Smith",
+              "email": "jane.smith@example.com",
+              "bio": "Jane Smith is a digital transformation expert...",
+              "company": "XYZ Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/janesmith",
+                "linkedin": "https://linkedin.com/in/janesmith"
+              },
+              "picture": "https://example.com/janesmith.jpg"
+            }
+          ],
+          "time": "Day 1, 10:00 - 11:00",
+          "tags": ["Digital Transformation", "Business Strategy"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Day 1 Closing Talk 1",
+          "description": "Building High-Performing Teams: Strategies for Success",
+          "presenters": [
+            {
+              "name": "Michael Johnson",
+              "email": "michael.johnson@example.com",
+              "bio": "Michael Johnson is a leadership and team-building expert...",
+              "company": "PQR Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/michaeljohnson",
+                "linkedin": "https://linkedin.com/in/michaeljohnson"
+              },
+              "picture": "https://example.com/michaeljohnson.jpg"
+            }
+          ],
+          "time": "Day 1, 17:00 - 18:00",
+          "tags": ["Leadership", "Team Building"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Day 1 Closing Talk 2",
+          "description": "The Future of Work: Adapting to Change",
+          "presenters": [
+            {
+              "name": "Sarah Wilson",
+              "email": "sarah.wilson@example.com",
+              "bio": "Sarah Wilson is an expert on the future of work...",
+              "company": "ABC Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/sarahwilson",
+                "linkedin": "https://linkedin.com/in/sarahwilson"
+              },
+              "picture": "https://example.com/sarahwilson.jpg"
+            }
+          ],
+          "time": "Day 1, 18:00 - 19:00",
+          "tags": ["Future of Work", "Change Management"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Day 2 Opening Keynote",
+          "description": "The Power of Innovation: Transforming Industries",
+          "presenters": [
+            {
+              "name": "Mark Johnson",
+              "email": "mark.johnson@example.com",
+              "bio": "Mark Johnson is an innovation strategist...",
+              "company": "PQR Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/markjohnson",
+                "linkedin": "https://linkedin.com/in/markjohnson"
+              },
+              "picture": "https://example.com/markjohnson.jpg"
+            }
+          ],
+          "time": "Day 2, 09:00 - 10:00",
+          "tags": ["Keynote", "Innovation"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Day 2 Main Stage Talk 2",
+          "description": "The Art of Storytelling: Engaging Audiences with Compelling Narratives",
+          "presenters": [
+            {
+              "name": "Emily Davis",
+              "email": "emily.davis@example.com",
+              "bio": "Emily Davis is a storytelling expert and author...",
+              "company": "XYZ Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/emilydavis",
+                "linkedin": "https://linkedin.com/in/emilydavis"
+              },
+              "picture": "https://example.com/emilydavis.jpg"
+            }
+          ],
+          "time": "Day 2, 10:00 - 11:00",
+          "tags": ["Storytelling", "Communication"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Day 2 Closing Talk 1",
+          "description": "The Ethics of Artificial Intelligence: Challenges and Responsibilities",
+          "presenters": [
+            {
+              "name": "David Thompson",
+              "email": "david.thompson@example.com",
+              "bio": "David Thompson is an AI ethics researcher...",
+              "company": "ABC Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/davidthompson",
+                "linkedin": "https://linkedin.com/in/davidthompson"
+              },
+              "picture": "https://example.com/davidthompson.jpg"
+            }
+          ],
+          "time": "Day 2, 17:00 - 18:00",
+          "tags": ["Artificial Intelligence", "Ethics"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Day 2 Closing Talk 2",
+          "description": "The Future of Technology: Insights and Predictions",
+          "presenters": [
+            {
+              "name": "Alexandra Wilson",
+              "email": "alexandra.wilson@example.com",
+              "bio": "Alexandra Wilson is a technology futurist...",
+              "company": "PQR Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/alexandrawilson",
+                "linkedin": "https://linkedin.com/in/alexandrawilson"
+              },
+              "picture": "https://example.com/alexandrawilson.jpg"
+            }
+          ],
+          "time": "Day 2, 18:00 - 19:00",
+          "tags": ["Future Technology", "Predictions"],
+          "webExLink": "https://example.com/webex-link"
+        }
+      ]
+    },
+    {
+      "name": "Backend Stage",
+      "color": "light_green_bg",
+      "talks": [
+        {
+          "title": "Scaling Microservices with Kubernetes",
+          "description": "Learn strategies for scaling microservices using Kubernetes and its advanced orchestration capabilities.",
+          "presenters": [
+            {
+              "name": "Robert Smith",
+              "email": "robert.smith@example.com",
+              "bio": "Robert Smith is a senior software engineer with a focus on scalable architectures...",
+              "company": "ABC Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/robertsmith",
+                "linkedin": "https://linkedin.com/in/robertsmith"
+              },
+              "picture": "https://example.com/robertsmith.jpg"
+            }
+          ],
+          "time": "Day 1, 11:00 - 12:00",
+          "tags": ["Microservices", "Kubernetes", "Scaling"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Building Scalable APIs with GraphQL",
+          "description": "Learn how to design and implement scalable APIs using GraphQL. Discover the benefits of GraphQL and how it can streamline data fetching and reduce over-fetching and under-fetching.",
+          "presenters": [
+            {
+              "name": "Alex Brown",
+              "email": "alex.brown@example.com",
+              "bio": "Alex Brown is a senior backend developer at XYZ Corporation. He has extensive experience in building high-performance APIs and enjoys exploring new technologies.",
+              "company": "XYZ Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/alexbrown",
+                "linkedin": "https://linkedin.com/in/alexbrown"
+              },
+              "picture": "https://example.com/alexbrown.jpg"
+            }
+          ],
+          "time": "Day 1, 15:00 - 16:00",
+          "tags": ["Backend Development", "GraphQL", "APIs"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Building Resilient Microservices with Circuit Breaker Pattern",
+          "description": "Explore the Circuit Breaker pattern and learn how to design and implement resilient microservices that can gracefully handle failures and prevent cascading failures.",
+          "presenters": [
+            {
+              "name": "Jessica Wilson",
+              "email": "jessica.wilson@example.com",
+              "bio": "Jessica Wilson is a backend engineer with a focus on microservices architecture...",
+              "company": "ABC Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/jessicawilson",
+                "linkedin": "https://linkedin.com/in/jessicawilson"
+              },
+              "picture": "https://example.com/jessicawilson.jpg"
+            }
+          ],
+          "time": "Day 1, 12:00 - 13:00",
+          "tags": ["Microservices", "Resilience", "Architecture"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Securing APIs with OAuth 2.0",
+          "description": "Learn how to secure your APIs using OAuth 2.0 authentication and authorization framework. Discover best practices for protecting sensitive data and ensuring secure communication.",
+          "presenters": [
+            {
+              "name": "Michael Johnson",
+              "email": "michael.johnson@example.com",
+              "bio": "Michael Johnson is a security expert with a focus on API security...",
+              "company": "XYZ Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/michaeljohnson",
+                "linkedin": "https://linkedin.com/in/michaeljohnson"
+              },
+              "picture": "https://example.com/michaeljohnson.jpg"
+            }
+          ],
+          "time": "Day 1, 13:00 - 14:00",
+          "tags": ["API Security", "OAuth 2.0", "Authentication"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Building Serverless Applications with AWS Lambda",
+          "description": "Explore the serverless architecture paradigm and learn how to build scalable and cost-effective applications using AWS Lambda.",
+          "presenters": [
+            {
+              "name": "Amy Davis",
+              "email": "amy.davis@example.com",
+              "bio": "Amy Davis is a backend engineer with expertise in serverless architecture...",
+              "company": "XYZ Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/amydavis",
+                "linkedin": "https://linkedin.com/in/amydavis"
+              },
+              "picture": "https://example.com/amydavis.jpg"
+            }
+          ],
+          "time": "Day 2, 11:00 - 12:00",
+          "tags": ["Serverless", "AWS Lambda", "Cloud Computing"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Building Event-Driven Microservices with Apache Kafka",
+          "description": "Learn how to design and build event-driven microservices using Apache Kafka as a scalable and fault-tolerant messaging system.",
+          "presenters": [
+            {
+              "name": "William Johnson",
+              "email": "william.johnson@example.com",
+              "bio": "William Johnson is a backend engineer with a focus on event-driven architectures...",
+              "company": "ABC Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/williamjohnson",
+                "linkedin": "https://linkedin.com/in/williamjohnson"
+              },
+              "picture": "https://example.com/williamjohnson.jpg"
+            }
+          ],
+          "time": "Day 2, 12:00 - 13:00",
+          "tags": [
+            "Microservices",
+            "Event-Driven Architecture",
+            "Apache Kafka"
+          ],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Building Real-Time APIs with GraphQL Subscriptions",
+          "description": "Explore GraphQL subscriptions, a powerful feature that enables real-time communication between clients and servers. Learn how to build real-time APIs using GraphQL subscriptions.",
+          "presenters": [
+            {
+              "name": "Olivia Smith",
+              "email": "olivia.smith@example.com",
+              "bio": "Olivia Smith is a backend developer with a passion for real-time technologies...",
+              "company": "XYZ Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/oliviasmith",
+                "linkedin": "https://linkedin.com/in/oliviasmith"
+              },
+              "picture": "https://example.com/oliviasmith.jpg"
+            }
+          ],
+          "time": "Day 2, 13:00 - 14:00",
+          "tags": ["Backend Development", "GraphQL", "Real-Time APIs"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Building Distributed Systems with Apache Cassandra",
+          "description": "Learn about Apache Cassandra, a highly scalable and distributed database. Discover how to design and build distributed systems using Cassandra.",
+          "presenters": [
+            {
+              "name": "Christopher Wilson",
+              "email": "christopher.wilson@example.com",
+              "bio": "Christopher Wilson is a backend engineer with expertise in distributed systems...",
+              "company": "PQR Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/christopherwilson",
+                "linkedin": "https://linkedin.com/in/christopherwilson"
+              },
+              "picture": "https://example.com/christopherwilson.jpg"
+            }
+          ],
+          "time": "Day 2, 14:00 - 15:00",
+          "tags": [
+            "Backend Development",
+            "Distributed Systems",
+            "Apache Cassandra"
+          ],
+          "webExLink": "https://example.com/webex-link"
+        }
+      ]
+    },
+    {
+      "name": "Frontend Stage",
+      "color": "dark_green_bg",
+      "talks": [
+        {
+          "title": "Building Progressive Web Apps with React",
+          "description": "Discover the power of progressive web apps (PWAs) and learn how to build them using React and modern web technologies.",
+          "presenters": [
+            {
+              "name": "Sarah Johnson",
+              "email": "sarah.johnson@example.com",
+              "bio": "Sarah Johnson is a frontend developer and advocate for modern web technologies...",
+              "company": "XYZ Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/sarahjohnson",
+                "linkedin": "https://linkedin.com/in/sarahjohnson"
+              },
+              "picture": "https://example.com/sarahjohnson.jpg"
+            }
+          ],
+          "time": "Day 1, 12:00 - 13:00",
+          "tags": ["Progressive Web Apps", "React", "Web Development"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Building Reactive User Interfaces with React",
+          "description": "Explore reactive programming principles and learn how to build highly interactive user interfaces using React and reactive libraries like RxJS.",
+          "presenters": [
+            {
+              "name": "Laura Wilson",
+              "email": "laura.wilson@example.com",
+              "bio": "Laura Wilson is a frontend engineer and React advocate...",
+              "company": "ABC Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/laurawilson",
+                "linkedin": "https://linkedin.com/in/laurawilson"
+              },
+              "picture": "https://example.com/laurawilson.jpg"
+            }
+          ],
+          "time": "Day 1, 11:00 - 12:00",
+          "tags": ["Frontend Development", "React", "Reactive Programming"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Building Accessible Web Applications",
+          "description": "Learn best practices for building web applications that are accessible to users with disabilities. Discover tools and techniques to ensure inclusivity in your frontend development process.",
+          "presenters": [
+            {
+              "name": "Daniel Anderson",
+              "email": "daniel.anderson@example.com",
+              "bio": "Daniel Anderson is a frontend developer with a passion for accessible web design...",
+              "company": "XYZ Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/danielanderson",
+                "linkedin": "https://linkedin.com/in/danielanderson"
+              },
+              "picture": "https://example.com/danielanderson.jpg"
+            }
+          ],
+          "time": "Day 1, 12:00 - 13:00",
+          "tags": ["Accessibility", "Inclusive Design", "Frontend"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "State Management with Redux",
+          "description": "Discover Redux, a predictable state container for JavaScript apps. Learn how to manage complex application state and streamline data flow in your frontend applications.",
+          "presenters": [
+            {
+              "name": "James Thompson",
+              "email": "james.thompson@example.com",
+              "bio": "James Thompson is a frontend developer and Redux enthusiast...",
+              "company": "ABC Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/jamesthompson",
+                "linkedin": "https://linkedin.com/in/jamesthompson"
+              },
+              "picture": "https://example.com/jamesthompson.jpg"
+            }
+          ],
+          "time": "Day 1, 13:00 - 14:00",
+          "tags": ["Frontend Development", "Redux", "State Management"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Introduction to Web Components",
+          "description": "Learn about Web Components, a set of web platform APIs that allow you to create reusable custom elements with encapsulated functionality.",
+          "presenters": [
+            {
+              "name": "Emily Wilson",
+              "email": "emily.wilson@example.com",
+              "bio": "Emily Wilson is a frontend engineer with expertise in web component development...",
+              "company": "PQR Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/emilywilson",
+                "linkedin": "https://linkedin.com/in/emilywilson"
+              },
+              "picture": "https://example.com/emilywilson.jpg"
+            }
+          ],
+          "time": "Day 1, 14:00 - 15:00",
+          "tags": ["Web Components", "Custom Elements", "Web Development"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Progressive Web Apps: Beyond the Basics",
+          "description": "Discover advanced techniques for building progressive web apps (PWAs) and learn how to leverage offline capabilities, push notifications, and more.",
+          "presenters": [
+            {
+              "name": "Michael Thompson",
+              "email": "michael.thompson@example.com",
+              "bio": "Michael Thompson is a frontend developer and PWA enthusiast...",
+              "company": "ABC Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/michaelthompson",
+                "linkedin": "https://linkedin.com/in/michaelthompson"
+              },
+              "picture": "https://example.com/michaelthompson.jpg"
+            }
+          ],
+          "time": "Day 2, 11:00 - 12:00",
+          "tags": [
+            "Progressive Web Apps",
+            "Web Development",
+            "Offline Capabilities"
+          ],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Building Scalable UI Components with Vue.js",
+          "description": "Learn how to design and build scalable UI components using Vue.js. Discover Vue's component-based architecture and explore best practices for building reusable UI elements.",
+          "presenters": [
+            {
+              "name": "Sophia Wilson",
+              "email": "sophia.wilson@example.com",
+              "bio": "Sophia Wilson is a frontend developer with expertise in Vue.js...",
+              "company": "XYZ Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/sophiawilson",
+                "linkedin": "https://linkedin.com/in/sophiawilson"
+              },
+              "picture": "https://example.com/sophiawilson.jpg"
+            }
+          ],
+          "time": "Day 2, 12:00 - 13:00",
+          "tags": [
+            "Frontend Development",
+            "Vue.js",
+            "Component-based Architecture"
+          ],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Optimizing Web Performance for Better User Experience",
+          "description": "Explore techniques for optimizing web performance and delivering fast-loading websites. Learn about performance metrics, image optimization, caching, and more.",
+          "presenters": [
+            {
+              "name": "Thomas Anderson",
+              "email": "thomas.anderson@example.com",
+              "bio": "Thomas Anderson is a frontend performance engineer...",
+              "company": "ABC Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/thomasanderson",
+                "linkedin": "https://linkedin.com/in/thomasanderson"
+              },
+              "picture": "https://example.com/thomasanderson.jpg"
+            }
+          ],
+          "time": "Day 2, 13:00 - 14:00",
+          "tags": ["Web Performance", "User Experience", "Optimization"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "State Management in React with Redux Toolkit",
+          "description": "Learn how to manage application state in React using Redux Toolkit. Discover Redux Toolkit's simplified API and built-in features for efficient state management.",
+          "presenters": [
+            {
+              "name": "Benjamin Davis",
+              "email": "benjamin.davis@example.com",
+              "bio": "Benjamin Davis is a frontend developer with a focus on state management...",
+              "company": "PQR Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/benjamindavis",
+                "linkedin": "https://linkedin.com/in/benjamindavis"
+              },
+              "picture": "https://example.com/benjamindavis.jpg"
+            }
+          ],
+          "time": "Day 2, 14:00 - 15:00",
+          "tags": ["Frontend Development", "React", "State Management"],
+          "webExLink": "https://example.com/webex-link"
+        }
+      ]
+    },
+    {
+      "name": "DevOps Stage",
+      "color": "yellow_bg",
+      "talks": [
+        {
+          "title": "Infrastructure as Code with Terraform",
+          "description": "Learn how to provision and manage infrastructure using Terraform as code and ensure consistent environments across different cloud platforms.",
+          "presenters": [
+            {
+              "name": "Emily Davis",
+              "email": "emily.davis@example.com",
+              "bio": "Emily Davis is a DevOps engineer with expertise in infrastructure automation...",
+              "company": "PQR Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/emilydavis",
+                "linkedin": "https://linkedin.com/in/emilydavis"
+              },
+              "picture": "https://example.com/emilydavis.jpg"
+            }
+          ],
+          "time": "Day 1, 13:00 - 14:00",
+          "tags": ["DevOps", "Infrastructure as Code", "Terraform"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Continuous Integration and Deployment with Jenkins",
+          "description": "Learn how to set up a CI/CD pipeline using Jenkins. Discover best practices for automating build, test, and deployment processes to achieve faster and more reliable software delivery.",
+          "presenters": [
+            {
+              "name": "Robert Miller",
+              "email": "robert.miller@example.com",
+              "bio": "Robert Miller is a DevOps engineer with expertise in CI/CD and infrastructure automation...",
+              "company": "ABC Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/robertmiller",
+                "linkedin": "https://linkedin.com/in/robertmiller"
+              },
+              "picture": "https://example.com/robertmiller.jpg"
+            }
+          ],
+          "time": "Day 1, 11:00 - 12:00",
+          "tags": ["DevOps", "Continuous Integration", "Continuous Deployment"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Infrastructure as Code with Terraform",
+          "description": "Learn how to provision and manage infrastructure using Terraform as code. Ensure consistent environments across different cloud platforms and simplify infrastructure management.",
+          "presenters": [
+            {
+              "name": "Sarah Davis",
+              "email": "sarah.davis@example.com",
+              "bio": "Sarah Davis is a DevOps engineer with a focus on infrastructure as code...",
+              "company": "XYZ Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/sarahdavis",
+                "linkedin": "https://linkedin.com/in/sarahdavis"
+              },
+              "picture": "https://example.com/sarahdavis.jpg"
+            }
+          ],
+          "time": "Day 1, 12:00 - 13:00",
+          "tags": ["DevOps", "Infrastructure as Code", "Terraform"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Monitoring and Observability with Prometheus",
+          "description": "Explore Prometheus, a popular open-source monitoring and alerting toolkit. Learn how to collect, visualize, and analyze metrics to gain insights into your systems.",
+          "presenters": [
+            {
+              "name": "John Wilson",
+              "email": "john.wilson@example.com",
+              "bio": "John Wilson is a DevOps engineer with experience in monitoring and observability tools...",
+              "company": "ABC Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/johnwilson",
+                "linkedin": "https://linkedin.com/in/johnwilson"
+              },
+              "picture": "https://example.com/johnwilson.jpg"
+            }
+          ],
+          "time": "Day 1, 13:00 - 14:00",
+          "tags": ["DevOps", "Monitoring", "Observability"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Container Orchestration with Kubernetes",
+          "description": "Learn about container orchestration with Kubernetes. Discover how to deploy, scale, and manage containerized applications in a Kubernetes cluster.",
+          "presenters": [
+            {
+              "name": "Jessica Miller",
+              "email": "jessica.miller@example.com",
+              "bio": "Jessica Miller is a DevOps engineer with expertise in Kubernetes...",
+              "company": "PQR Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/jessicamiller",
+                "linkedin": "https://linkedin.com/in/jessicamiller"
+              },
+              "picture": "https://example.com/jessicamiller.jpg"
+            }
+          ],
+          "time": "Day 1, 16:00 - 17:00",
+          "tags": ["DevOps", "Kubernetes", "Containerization"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Infrastructure as Code with AWS CloudFormation",
+          "description": "Learn how to provision and manage infrastructure on AWS using AWS CloudFormation. Discover the declarative approach to infrastructure management.",
+          "presenters": [
+            {
+              "name": "Emma Johnson",
+              "email": "emma.johnson@example.com",
+              "bio": "Emma Johnson is a DevOps engineer with expertise in AWS CloudFormation...",
+              "company": "XYZ Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/emmajohnson",
+                "linkedin": "https://linkedin.com/in/emmajohnson"
+              },
+              "picture": "https://example.com/emmajohnson.jpg"
+            }
+          ],
+          "time": "Day 2, 11:00 - 12:00",
+          "tags": ["DevOps", "Infrastructure as Code", "AWS CloudFormation"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Container Security Best Practices",
+          "description": "Explore best practices for securing containerized applications. Learn about container image security, runtime security, and vulnerability management.",
+          "presenters": [
+            {
+              "name": "Ethan Wilson",
+              "email": "ethan.wilson@example.com",
+              "bio": "Ethan Wilson is a DevOps engineer with a focus on container security...",
+              "company": "ABC Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/ethanwilson",
+                "linkedin": "https://linkedin.com/in/ethanwilson"
+              },
+              "picture": "https://example.com/ethanwilson.jpg"
+            }
+          ],
+          "time": "Day 2, 12:00 - 13:00",
+          "tags": ["DevOps", "Container Security", "Best Practices"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Effective Application Monitoring with ELK Stack",
+          "description": "Learn how to monitor and analyze application logs using the ELK Stack (Elasticsearch, Logstash, Kibana). Discover techniques for effective log aggregation and visualization.",
+          "presenters": [
+            {
+              "name": "Grace Thompson",
+              "email": "grace.thompson@example.com",
+              "bio": "Grace Thompson is a DevOps engineer with expertise in application monitoring...",
+              "company": "XYZ Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/gracethompson",
+                "linkedin": "https://linkedin.com/in/gracethompson"
+              },
+              "picture": "https://example.com/gracethompson.jpg"
+            }
+          ],
+          "time": "Day 2, 13:00 - 14:00",
+          "tags": ["DevOps", "Application Monitoring", "ELK Stack"],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Infrastructure Orchestration with HashiCorp Consul",
+          "description": "Learn how to orchestrate and connect services in a distributed environment using HashiCorp Consul. Discover service discovery, health checking, and dynamic configuration management.",
+          "presenters": [
+            {
+              "name": "Samuel Wilson",
+              "email": "samuel.wilson@example.com",
+              "bio": "Samuel Wilson is a DevOps engineer with expertise in HashiCorp Consul...",
+              "company": "PQR Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/samuelwilson",
+                "linkedin": "https://linkedin.com/in/samuelwilson"
+              },
+              "picture": "https://example.com/samuelwilson.jpg"
+            }
+          ],
+          "time": "Day 2, 14:00 - 15:00",
+          "tags": [
+            "DevOps",
+            "Infrastructure Orchestration",
+            "HashiCorp Consul"
+          ],
+          "webExLink": "https://example.com/webex-link"
+        }
+      ]
+    },
+    {
+      "name": "AI Stage",
+      "color": "orange_bg",
+      "talks": [
+        {
+          "title": "Natural Language Processing for Chatbots",
+          "description": "Explore the fundamentals of natural language processing (NLP) and learn how to build intelligent chatbots using NLP techniques.",
+          "presenters": [
+            {
+              "name": "Michaela Anderson",
+              "email": "michaela.anderson@example.com",
+              "bio": "Michaela Anderson is an AI researcher with a focus on natural language processing...",
+              "company": "XYZ Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/michaelaanderson",
+                "linkedin": "https://linkedin.com/in/michaelaanderson"
+              },
+              "picture": "https://example.com/michaelaanderson.jpg"
+            }
+          ],
+          "time": "Day 1, 14:00 - 15:00",
+          "tags": [
+            "Artificial Intelligence",
+            "Natural Language Processing",
+            "Chatbots"
+          ],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Computer Vision: From Theory to Practice",
+          "description": "Discover the fundamentals of computer vision and learn how to apply computer vision techniques to solve real-world problems. Explore image classification, object detection, and more.",
+          "presenters": [
+            {
+              "name": "Rachel Thompson",
+              "email": "rachel.thompson@example.com",
+              "bio": "Rachel Thompson is a computer vision researcher at Visionary AI Labs...",
+              "company": "Visionary AI Labs",
+              "socialMedia": {
+                "twitter": "https://twitter.com/rachelthompson",
+                "linkedin": "https://linkedin.com/in/rachelthompson"
+              },
+              "picture": "https://example.com/rachelthompson.jpg"
+            }
+          ],
+          "time": "Day 1, 11:00 - 12:00",
+          "tags": [
+            "Artificial Intelligence",
+            "Computer Vision",
+            "Image Classification"
+          ],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Natural Language Processing for Text Analytics",
+          "description": "Explore natural language processing techniques for text analytics. Learn how to extract insights, sentiment analysis, and perform entity recognition on textual data.",
+          "presenters": [
+            {
+              "name": "Daniel Smith",
+              "email": "daniel.smith@example.com",
+              "bio": "Daniel Smith is a natural language processing expert...",
+              "company": "XYZ Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/danielsmith",
+                "linkedin": "https://linkedin.com/in/danielsmith"
+              },
+              "picture": "https://example.com/danielsmith.jpg"
+            }
+          ],
+          "time": "Day 1, 12:00 - 13:00",
+          "tags": [
+            "Artificial Intelligence",
+            "Natural Language Processing",
+            "Text Analytics"
+          ],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Generative Adversarial Networks: Theory and Applications",
+          "description": "Discover the theory behind Generative Adversarial Networks (GANs) and learn about their applications in generating realistic images, text, and more.",
+          "presenters": [
+            {
+              "name": "Andrew Wilson",
+              "email": "andrew.wilson@example.com",
+              "bio": "Andrew Wilson is an AI researcher with a focus on generative models...",
+              "company": "ABC Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/andrewwilson",
+                "linkedin": "https://linkedin.com/in/andrewwilson"
+              },
+              "picture": "https://example.com/andrewwilson.jpg"
+            }
+          ],
+          "time": "Day 1, 13:00 - 14:00",
+          "tags": [
+            "Artificial Intelligence",
+            "Generative Adversarial Networks",
+            "Machine Learning"
+          ],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Reinforcement Learning: From Theory to Practice",
+          "description": "Explore the fundamentals of reinforcement learning and learn how to apply it to train intelligent agents in various domains. Discover different algorithms and techniques.",
+          "presenters": [
+            {
+              "name": "Alex Johnson",
+              "email": "alex.johnson@example.com",
+              "bio": "Alex Johnson is an AI researcher with a focus on reinforcement learning...",
+              "company": "PQR Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/alexjohnson",
+                "linkedin": "https://linkedin.com/in/alexjohnson"
+              },
+              "picture": "https://example.com/alexjohnson.jpg"
+            }
+          ],
+          "time": "Day 1, 14:00 - 15:00",
+          "tags": [
+            "Artificial Intelligence",
+            "Reinforcement Learning",
+            "Machine Learning"
+          ],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Deep Learning: Convolutional Neural Networks",
+          "description": "Explore convolutional neural networks (CNNs), a deep learning architecture widely used in computer vision tasks. Learn how to build and train CNN models.",
+          "presenters": [
+            {
+              "name": "Sophie Wilson",
+              "email": "sophie.wilson@example.com",
+              "bio": "Sophie Wilson is an AI researcher specializing in deep learning...",
+              "company": "ABC Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/sophiewilson",
+                "linkedin": "https://linkedin.com/in/sophiewilson"
+              },
+              "picture": "https://example.com/sophiewilson.jpg"
+            }
+          ],
+          "time": "Day 2, 11:00 - 12:00",
+          "tags": [
+            "Artificial Intelligence",
+            "Deep Learning",
+            "Convolutional Neural Networks"
+          ],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Natural Language Processing with Transformers",
+          "description": "Discover transformer models for natural language processing tasks. Learn about BERT, GPT, and other transformer-based models for text classification, generation, and understanding.",
+          "presenters": [
+            {
+              "name": "Jacob Johnson",
+              "email": "jacob.johnson@example.com",
+              "bio": "Jacob Johnson is an AI researcher with a focus on natural language processing...",
+              "company": "XYZ Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/jacobjohnson",
+                "linkedin": "https://linkedin.com/in/jacobjohnson"
+              },
+              "picture": "https://example.com/jacobjohnson.jpg"
+            }
+          ],
+          "time": "Day 2, 12:00 - 13:00",
+          "tags": [
+            "Artificial Intelligence",
+            "Natural Language Processing",
+            "Transformers"
+          ],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Advanced Reinforcement Learning Techniques",
+          "description": "Explore advanced techniques in reinforcement learning, including deep Q-networks (DQNs), policy gradients, and actor-critic models.",
+          "presenters": [
+            {
+              "name": "Nathan Davis",
+              "email": "nathan.davis@example.com",
+              "bio": "Nathan Davis is an AI researcher with expertise in reinforcement learning...",
+              "company": "ABC Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/nathandavis",
+                "linkedin": "https://linkedin.com/in/nathandavis"
+              },
+              "picture": "https://example.com/nathandavis.jpg"
+            }
+          ],
+          "time": "Day 2, 13:00 - 14:00",
+          "tags": [
+            "Artificial Intelligence",
+            "Reinforcement Learning",
+            "Deep Q-Networks"
+          ],
+          "webExLink": "https://example.com/webex-link"
+        },
+        {
+          "title": "Transfer Learning in Deep Neural Networks",
+          "description": "Learn how to leverage transfer learning to apply pre-trained deep neural networks to new tasks. Explore different transfer learning approaches and use cases.",
+          "presenters": [
+            {
+              "name": "Sophia Miller",
+              "email": "sophia.miller@example.com",
+              "bio": "Sophia Miller is an AI researcher with expertise in transfer learning...",
+              "company": "PQR Corporation",
+              "socialMedia": {
+                "twitter": "https://twitter.com/sophiamiller",
+                "linkedin": "https://linkedin.com/in/sophiamiller"
+              },
+              "picture": "https://example.com/sophiamiller.jpg"
+            }
+          ],
+          "time": "Day 2, 14:00 - 15:00",
+          "tags": [
+            "Artificial Intelligence",
+            "Transfer Learning",
+            "Deep Neural Networks"
+          ],
+          "webExLink": "https://example.com/webex-link"
+        }
+      ]
+    }
+  ]
+}
