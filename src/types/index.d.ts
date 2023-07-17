@@ -23,7 +23,8 @@ export interface Presenter {
 }
 
 export interface SocialMedia {
-  [name: string]: string;
+  linkedin: string;
+  twitter: string;
 }
 
 export interface Day {

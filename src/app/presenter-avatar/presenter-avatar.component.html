@@ -8,9 +8,17 @@
         height="100"
       />
     </figure>
-    <div>
+    <div style="display: block; line-height: 1">
       <h2>{{ presenter.name }}</h2>
       <h4>{{ presenter.bio }}</h4>
+      <div style="display: flex; gap: 15px">
+        <a [href]="presenter.socialMedia.twitter"
+          ><nx-icon name="twitter" font="fa" size="s"></nx-icon
+        ></a>
+        <a [href]="presenter.socialMedia.linkedin"
+          ><nx-icon name="linkedin-custom" size="s"></nx-icon
+        ></a>
+      </div>
     </div>
   </div>
   <nx-link *ngFor="let talk of getTalksForPresenter(presenter)" nxStyle="block">
