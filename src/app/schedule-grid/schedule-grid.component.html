@@ -7,29 +7,31 @@
       </ng-container>
     </div>
     <ng-container *ngFor="let time of times">
-      <div nxRow>
-        <div nxCol="2" class="time">{{ time }}</div>
-        <ng-container *ngFor="let stage of stages">
-          <div nxCol="2" class="card-container">
-            <ng-container *ngIf="getTalkByStageAndTime(stage, day, time)">
-              <nx-card
-                [class]="stage.color"
-                class="button talk-card"
-                (click)="
-                  openTalkDialog(getTalkByStageAndTime(stage, day, time))
-                "
-                style="flex: 1"
-              >
-                <h3>
-                  {{ getTalkByStageAndTime(stage, day, time)?.title }}
-                </h3>
-                <p>
-                  {{ getTalkByStageAndTime(stage, day, time)?.description }}
-                </p>
-              </nx-card>
-            </ng-container>
-          </div>
-        </ng-container>
+      <div nxLayout="grid nogutters">
+        <div nxRow>
+          <div nxCol="2" class="time">{{ time }}</div>
+          <ng-container *ngFor="let stage of stages">
+            <div nxCol="2" class="card-container">
+              <ng-container *ngIf="getTalkByStageAndTime(stage, day, time)">
+                <nx-card
+                  [class]="stage.color"
+                  class="button talk-card"
+                  (click)="
+                    openTalkDialog(getTalkByStageAndTime(stage, day, time))
+                  "
+                  style="flex: 1"
+                >
+                  <h3>
+                    {{ getTalkByStageAndTime(stage, day, time)?.title }}
+                  </h3>
+                  <p>
+                    {{ getTalkByStageAndTime(stage, day, time)?.description }}
+                  </p>
+                </nx-card>
+              </ng-container>
+            </div>
+          </ng-container>
+        </div>
       </div>
     </ng-container>
   </div>

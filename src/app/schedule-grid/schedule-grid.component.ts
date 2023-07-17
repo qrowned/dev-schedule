@@ -65,9 +65,7 @@ export class ScheduleGridComponent {
       ariaLabelledBy: 'talk-dialog',
     });
 
-    dialogRef.afterClosed().subscribe((result) => {
-      console.log(result);
-    });
+    dialogRef.afterClosed().subscribe();
   }
 
   formatPresenterNames(presenters: Presenter[]): string {
