@@ -24,4 +24,4 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: .dist/dev-schedule # The folder the action should deploy.
+          folder: ./dist/dev-schedule # The folder the action should deploy.
