@@ -1,8 +1,11 @@
-<div *ngIf="stages && day" class="scroll-container tab__content table-outline">
+<div
+  *ngIf="stages().length > 0 && day"
+  class="scroll-container tab__content table-outline"
+>
   <div nxGrid class="timetable-grid">
     <div nxRow>
       <div nxCol="2"></div>
-      <ng-container *ngFor="let stage of stages">
+      <ng-container *ngFor="let stage of stages()">
         <div nxCol="2" class="stage-heading center">{{ stage.name }}</div>
       </ng-container>
     </div>
@@ -10,7 +13,7 @@
       <div nxLayout="grid nogutters">
         <div nxRow>
           <div nxCol="2" class="time">{{ time }}</div>
-          <ng-container *ngFor="let stage of stages">
+          <ng-container *ngFor="let stage of stages()">
             <div nxCol="2" class="card-container">
               <ng-container *ngIf="getTalkByStageAndTime(stage, day, time)">
                 <nx-card
@@ -37,13 +40,23 @@
   </div>
 </div>
 
-<ng-template #template let-data>
+<ng-template #talkmodal let-data>
   <div>
-    <p>{{ formatPresenterNames(data.presenters) }}</p>
+    <div class="presenter-container">
+      <nx-link *ngFor="let presenter of data.presenters">
+        <p (click)="openPresenterDialog(presenter)">{{ presenter.name }}</p>
+      </nx-link>
+    </div>
     <h3 nxHeadline="subsection-medium">
       {{ data.title }}
     </h3>
     <p nxCopytext>{{ data.description }}</p>
     <nx-badge *ngFor="let tag of data.tags">{{ tag }}</nx-badge>
+  </div>
+</ng-template>
+
+<ng-template #presentermodal let-data>
+  <div>
+    <app-presenter-avatar [presenter]="data"></app-presenter-avatar>
   </div>
 </ng-template>

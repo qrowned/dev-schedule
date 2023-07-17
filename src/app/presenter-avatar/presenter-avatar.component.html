@@ -1,0 +1,22 @@
+<div *ngIf="presenter">
+  <div class="header-box">
+    <figure nxFigure style="height: 100px; width: 100px">
+      <img
+        ngSrc="https://pwco.com.sg/wp-content/uploads/2020/05/Generic-Profile-Placeholder-v3.png"
+        [alt]="'Picture of presenter ' + presenter.name"
+        width="100"
+        height="100"
+      />
+    </figure>
+    <div>
+      <h2>{{ presenter.name }}</h2>
+      <h4>{{ presenter.bio }}</h4>
+    </div>
+  </div>
+  <nx-link *ngFor="let talk of getTalksForPresenter(presenter)" nxStyle="block">
+    <p>
+      <nx-icon name="arrow-right" />
+      {{ talk.title }}
+    </p>
+  </nx-link>
+</div>

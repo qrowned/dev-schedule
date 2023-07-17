@@ -24,14 +24,17 @@ import { NxSpinnerModule } from '@aposin/ng-aquila/spinner';
 import { NxHeaderModule } from '@aposin/ng-aquila/header';
 import { NxTabsModule } from '@aposin/ng-aquila/tabs';
 import { NxCardModule } from '@aposin/ng-aquila/card';
+import { NxImageModule } from '@aposin/ng-aquila/image';
+import { NxBadgeModule } from '@aposin/ng-aquila/badge';
+import { NgOptimizedImage } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { CommonModule, DatePipe } from '@angular/common';
-import { NxBadgeModule } from '@aposin/ng-aquila/badge';
 import { ScheduleGridComponent } from './schedule-grid/schedule-grid.component';
+import { PresenterAvatarComponent } from './presenter-avatar/presenter-avatar.component';
 
 @NgModule({
-  declarations: [AppComponent, ScheduleGridComponent],
+  declarations: [AppComponent, ScheduleGridComponent, PresenterAvatarComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -62,6 +65,8 @@ import { ScheduleGridComponent } from './schedule-grid/schedule-grid.component';
     NxTabsModule,
     NxBadgeModule,
     NxCardModule,
+    NxImageModule,
+    NgOptimizedImage,
   ],
   providers: [DatePipe],
   bootstrap: [AppComponent],
