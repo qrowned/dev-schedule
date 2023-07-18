@@ -6,11 +6,11 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { DialogService } from '../dialog.service';
 
 @Component({
-  selector: 'app-presenter-avatar',
-  templateUrl: './presenter-avatar.component.html',
-  styleUrls: ['./presenter-avatar.component.css'],
+  selector: 'app-presenter-profile',
+  templateUrl: './presenter-profile.component.html',
+  styleUrls: ['./presenter-profile.component.css'],
 })
-export class PresenterAvatarComponent {
+export class PresenterProfileComponent {
   @Input() presenter?: Presenter;
   stages: WritableSignal<Stage[]>;
 

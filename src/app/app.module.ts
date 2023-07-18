@@ -31,14 +31,14 @@ import { NgOptimizedImage } from '@angular/common';
 import { AppComponent } from './app.component';
 import { CommonModule, DatePipe } from '@angular/common';
 import { ScheduleGridComponent } from './schedule-grid/schedule-grid.component';
-import { PresenterAvatarComponent } from './presenter-avatar/presenter-avatar.component';
+import { PresenterProfileComponent } from './presenter-profile/presenter-profile.component';
 import { CustomDialogComponent } from './custom-dialog/custom-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ScheduleGridComponent,
-    PresenterAvatarComponent,
+    PresenterProfileComponent,
     CustomDialogComponent,
   ],
   imports: [

@@ -1,4 +1,4 @@
-<ng-template #talkdialog let-data>
+s<ng-template #talkdialog let-data>
   <div>
     <div class="presenter-container">
       <nx-link *ngFor="let presenter of data.presenters">
@@ -17,6 +17,6 @@
 
 <ng-template #presenterdialog let-data>
   <div>
-    <app-presenter-avatar [presenter]="data"></app-presenter-avatar>
+    <app-presenter-profile [presenter]="data"></app-presenter-profile>
   </div>
 </ng-template>
