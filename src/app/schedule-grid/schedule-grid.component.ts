@@ -1,15 +1,7 @@
-import {
-  ChangeDetectorRef,
-  Component,
-  Input,
-  TemplateRef,
-  ViewChild,
-  WritableSignal,
-  signal,
-} from '@angular/core';
-import { NxDialogService } from '@aposin/ng-aquila/modal';
-import { Day, Presenter, Stage, Talk } from 'src/types';
+import { Component, Input, WritableSignal } from '@angular/core';
+import { Day, Stage, Talk } from 'src/types';
 import { DataService } from '../data.service';
+import { DialogService } from '../dialog.service';
 
 @Component({
   selector: 'app-schedule-grid',
@@ -17,16 +9,13 @@ import { DataService } from '../data.service';
   styleUrls: ['./schedule-grid.component.css'],
 })
 export class ScheduleGridComponent {
-  @ViewChild('talkmodal') talkRef!: TemplateRef<Talk>;
-  @ViewChild('presentermodal') presenterRef!: TemplateRef<Presenter>;
   @Input() day?: Day;
   days: WritableSignal<Day[]>;
   stages: WritableSignal<Stage[]>;
   times: string[];
 
   constructor(
-    private readonly dialogService: NxDialogService,
-    private readonly _cdr: ChangeDetectorRef,
+    public dialogService: DialogService,
     private dataService: DataService
   ) {
     this.times = dataService.times;
@@ -35,7 +24,7 @@ export class ScheduleGridComponent {
   }
 
   // Fetch every talks from the stages variable which happen on a certain day and return them as an array
-  getTalksByDay(day: Day): Talk[] | undefined {
+  getTalksByDay(day: Day): Talk[] {
     return this.stages()
       ?.map((stage) => stage.talks)
       .flat()
@@ -44,7 +33,7 @@ export class ScheduleGridComponent {
           let dayId: string = talk.time.split(',')[0].split(' ')[1];
           return dayId === day.id.toString();
         } catch (error) {
-          return;
+          return [];
         }
       });
   }
@@ -60,40 +49,9 @@ export class ScheduleGridComponent {
           let dayId: string = talk.time.split(',')[0].split(' ')[1];
           return dayId === day.id.toString();
         } catch (error) {
-          return;
+          return [];
         }
       })
       .find((talk) => talk.time.includes(time));
-  }
-
-  openTalkDialog(talk: Talk | undefined): void {
-    if (!talk) return;
-
-    const dialogRef = this.dialogService.open(this.talkRef, {
-      showCloseIcon: true,
-      data: talk,
-      ariaLabelledBy: 'talk-dialog',
-    });
-
-    dialogRef.afterClosed().subscribe();
-  }
-
-  openPresenterDialog(presenter: Presenter): void {
-    const dialogRef = this.dialogService.open(this.presenterRef, {
-      showCloseIcon: true,
-      data: presenter,
-      ariaLabelledBy: 'presenter-dialog',
-    });
-
-    dialogRef.afterClosed().subscribe();
-  }
-
-  formatPresenterNames(presenters: Presenter[]): string {
-    return presenters
-      .map(
-        (presenter: Presenter) =>
-          presenter.name + ' (' + presenter.company + ')'
-      )
-      .join(', ');
   }
 }

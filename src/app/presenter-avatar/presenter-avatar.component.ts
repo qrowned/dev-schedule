@@ -3,6 +3,7 @@ import { Presenter, Stage, Talk } from 'src/types';
 import { DataService } from '../data.service';
 import { NxIconRegistry } from '@aposin/ng-aquila/icon';
 import { DomSanitizer } from '@angular/platform-browser';
+import { DialogService } from '../dialog.service';
 
 @Component({
   selector: 'app-presenter-avatar',
@@ -14,6 +15,7 @@ export class PresenterAvatarComponent {
   stages: WritableSignal<Stage[]>;
 
   constructor(
+    public dialogService: DialogService,
     private dataService: DataService,
     private readonly nxIconRegistry: NxIconRegistry,
     domSanitizer: DomSanitizer

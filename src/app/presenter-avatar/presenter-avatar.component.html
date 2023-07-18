@@ -2,7 +2,11 @@
   <div class="header-box">
     <figure nxFigure style="height: 100px; width: 100px">
       <img
-        ngSrc="https://pwco.com.sg/wp-content/uploads/2020/05/Generic-Profile-Placeholder-v3.png"
+        [ngSrc]="
+          presenter.picture
+            ? presenter.picture
+            : 'assets/images/avatar-placeholder.png'
+        "
         [alt]="'Picture of presenter ' + presenter.name"
         width="100"
         height="100"
@@ -22,7 +26,7 @@
     </div>
   </div>
   <nx-link *ngFor="let talk of getTalksForPresenter(presenter)" nxStyle="block">
-    <p>
+    <p (click)="dialogService.openTalkDialog(talk)">
       <nx-icon name="arrow-right" />
       {{ talk.title }}
     </p>

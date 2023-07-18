@@ -1,0 +1,8 @@
+.presenter-container {
+  display: flex;
+  gap: 8px; /* Adjust the value as per your desired spacing */
+}
+
+nx-badge {
+  margin: 8px;
+}

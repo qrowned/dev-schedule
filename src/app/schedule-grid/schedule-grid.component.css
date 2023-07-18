@@ -29,10 +29,6 @@
   cursor: pointer;
 }
 
-nx-badge {
-  margin: 8px;
-}
-
 .red_bg {
   background-color: #f62459;
 }
@@ -61,9 +57,4 @@ nx-badge {
 .card-container {
   display: flex;
   flex-direction: column;
-}
-
-.presenter-container {
-  display: flex;
-  gap: 8px; /* Adjust the value as per your desired spacing */
 }

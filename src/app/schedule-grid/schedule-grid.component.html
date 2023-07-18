@@ -20,7 +20,9 @@
                   [class]="stage.color"
                   class="button talk-card"
                   (click)="
-                    openTalkDialog(getTalkByStageAndTime(stage, day, time))
+                    dialogService.openTalkDialog(
+                      getTalkByStageAndTime(stage, day, time)
+                    )
                   "
                   style="flex: 1"
                 >
@@ -39,24 +41,3 @@
     </ng-container>
   </div>
 </div>
-
-<ng-template #talkmodal let-data>
-  <div>
-    <div class="presenter-container">
-      <nx-link *ngFor="let presenter of data.presenters">
-        <p (click)="openPresenterDialog(presenter)">{{ presenter.name }}</p>
-      </nx-link>
-    </div>
-    <h3 nxHeadline="subsection-medium">
-      {{ data.title }}
-    </h3>
-    <p nxCopytext>{{ data.description }}</p>
-    <nx-badge *ngFor="let tag of data.tags">{{ tag }}</nx-badge>
-  </div>
-</ng-template>
-
-<ng-template #presentermodal let-data>
-  <div>
-    <app-presenter-avatar [presenter]="data"></app-presenter-avatar>
-  </div>
-</ng-template>
