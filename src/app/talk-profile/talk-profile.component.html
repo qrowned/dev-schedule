@@ -1,0 +1,14 @@
+<div *ngIf="talk">
+  <div class="presenter-container">
+    <nx-link *ngFor="let presenter of talk.presenters">
+      <p (click)="dialogService.openPresenterDialog(presenter)">
+        {{ presenter.name }}
+      </p>
+    </nx-link>
+  </div>
+  <h3 nxHeadline="subsection-medium">
+    {{ talk.title }}
+  </h3>
+  <p nxCopytext>{{ talk.description }}</p>
+  <nx-badge *ngFor="let tag of talk.tags">{{ tag }}</nx-badge>
+</div>

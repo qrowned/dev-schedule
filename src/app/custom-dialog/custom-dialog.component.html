@@ -1,17 +1,6 @@
-s<ng-template #talkdialog let-data>
+<ng-template #talkdialog let-data>
   <div>
-    <div class="presenter-container">
-      <nx-link *ngFor="let presenter of data.presenters">
-        <p (click)="dialogService.openPresenterDialog(presenter)">
-          {{ presenter.name }}
-        </p>
-      </nx-link>
-    </div>
-    <h3 nxHeadline="subsection-medium">
-      {{ data.title }}
-    </h3>
-    <p nxCopytext>{{ data.description }}</p>
-    <nx-badge *ngFor="let tag of data.tags">{{ tag }}</nx-badge>
+    <app-talk-profile [talk]="data"></app-talk-profile>
   </div>
 </ng-template>
 

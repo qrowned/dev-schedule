@@ -33,6 +33,7 @@ import { CommonModule, DatePipe } from '@angular/common';
 import { ScheduleGridComponent } from './schedule-grid/schedule-grid.component';
 import { PresenterProfileComponent } from './presenter-profile/presenter-profile.component';
 import { CustomDialogComponent } from './custom-dialog/custom-dialog.component';
+import { TalkProfileComponent } from './talk-profile/talk-profile.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { CustomDialogComponent } from './custom-dialog/custom-dialog.component';
     ScheduleGridComponent,
     PresenterProfileComponent,
     CustomDialogComponent,
+    TalkProfileComponent,
   ],
   imports: [
     BrowserModule,
