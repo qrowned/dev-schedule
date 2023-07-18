@@ -9,7 +9,7 @@ import { DialogService } from '../dialog.service';
 @Component({
   selector: 'app-custom-dialog',
   templateUrl: './custom-dialog.component.html',
-  styleUrls: ['./custom-dialog.component.css'],
+  styleUrls: ['./custom-dialog.component.scss'],
 })
 export class CustomDialogComponent implements AfterViewInit {
   dialogService: DialogService;

@@ -8,7 +8,7 @@ import { DialogService } from '../dialog.service';
 @Component({
   selector: 'app-presenter-profile',
   templateUrl: './presenter-profile.component.html',
-  styleUrls: ['./presenter-profile.component.css'],
+  styleUrls: ['./presenter-profile.component.scss'],
 })
 export class PresenterProfileComponent {
   @Input() presenter?: Presenter;
