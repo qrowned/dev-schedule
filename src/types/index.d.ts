@@ -2,6 +2,7 @@ export interface Stage {
   name: string;
   color: string;
   talks: Talk[];
+  size: number;
 }
 
 export interface Talk {

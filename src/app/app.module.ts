@@ -34,6 +34,7 @@ import { ScheduleGridComponent } from './schedule-grid/schedule-grid.component';
 import { PresenterProfileComponent } from './presenter-profile/presenter-profile.component';
 import { CustomDialogComponent } from './custom-dialog/custom-dialog.component';
 import { TalkProfileComponent } from './talk-profile/talk-profile.component';
+import { NgVar } from './ng-var.directive';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { TalkProfileComponent } from './talk-profile/talk-profile.component';
     PresenterProfileComponent,
     CustomDialogComponent,
     TalkProfileComponent,
+    NgVar,
   ],
   imports: [
     BrowserModule,

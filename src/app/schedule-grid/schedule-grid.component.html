@@ -14,23 +14,23 @@
         <div nxRow>
           <div nxCol="2" class="time">{{ time }}</div>
           <ng-container *ngFor="let stage of stages()">
-            <div nxCol="2" class="card-container">
-              <ng-container *ngIf="getTalkByStageAndTime(stage, day, time)">
+            <div
+              *ngVar="getTalkByStageAndTime(stage, day, time) as talk"
+              [nxCol]="talk ? stage.size.toString() : '2'"
+              class="card-container"
+            >
+              <ng-container *ngIf="talk">
                 <nx-card
                   [class]="stage.color"
-                  class="button talk-card"
-                  (click)="
-                    dialogService.openTalkDialog(
-                      getTalkByStageAndTime(stage, day, time)
-                    )
-                  "
+                  class="button talk-card card-content"
+                  (click)="dialogService.openTalkDialog(talk)"
                   style="flex: 1"
                 >
                   <h3>
-                    {{ getTalkByStageAndTime(stage, day, time)?.title }}
+                    {{ talk.title }}
                   </h3>
                   <p>
-                    {{ getTalkByStageAndTime(stage, day, time)?.description }}
+                    {{ talk.description }}
                   </p>
                 </nx-card>
               </ng-container>
