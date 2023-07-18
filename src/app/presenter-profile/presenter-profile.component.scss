@@ -1,0 +1,22 @@
+$avatar-height: 100px;
+$avatar-width: 100px;
+
+$image-border-radius: 7px;
+
+.header-box {
+  display: flex;
+  gap: 20px;
+}
+
+.image-figure {
+  height: $avatar-height;
+  width: $avatar-width;
+  border-radius: $image-border-radius;
+  overflow: hidden;
+}
+
+.image-figure img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

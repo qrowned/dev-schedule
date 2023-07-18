@@ -6,7 +6,7 @@ import { DialogService } from '../dialog.service';
 @Component({
   selector: 'app-schedule-grid',
   templateUrl: './schedule-grid.component.html',
-  styleUrls: ['./schedule-grid.component.css'],
+  styleUrls: ['./schedule-grid.component.scss'],
 })
 export class ScheduleGridComponent {
   @Input() day?: Day;

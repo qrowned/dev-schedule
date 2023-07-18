@@ -1,6 +1,19 @@
+$timetable-margin-right: 30px;
+$timetable-margin-top: 30px;
+
+$hover-color: rgba(0, 0, 0, 0.3);
+
+$red: #f62459;
+$light-green: #5fcd8a;
+$dark-green: #00908d;
+$yellow: #fab600;
+$orange: #f86200;
+
+$talk-card-transition-time: 0.3s;
+
 .timetable-grid {
-  margin-right: 30px;
-  margin-top: 30px;
+  margin-right: $timetable-margin-right;
+  margin-top: $timetable-margin-top;
 }
 
 .stage-heading {
@@ -12,11 +25,11 @@
 .talk-card {
   display: block;
   margin: 0px;
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow $talk-card-transition-time ease;
 }
 
 .talk-card:hover {
-  box-shadow: 0 20px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 10px $hover-color;
 }
 
 .time {
@@ -30,23 +43,23 @@
 }
 
 .red_bg {
-  background-color: #f62459;
+  background-color: $red;
 }
 
 .light_green_bg {
-  background-color: #5fcd8a;
+  background-color: $light-green;
 }
 
 .dark_green_bg {
-  background-color: #00908d;
+  background-color: $dark-green;
 }
 
 .yellow_bg {
-  background-color: #fab600;
+  background-color: $yellow;
 }
 
 .orange_bg {
-  background-color: #f86200;
+  background-color: $orange;
 }
 
 .center {

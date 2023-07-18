@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+$background: #0f2a3d;
 
 @import "@angular/cdk/overlay-prebuilt.css";
 @import "@angular/cdk/a11y-prebuilt.css";
 @import "@fortawesome/fontawesome-free/css/all.css";
 
 body {
-  background: #0f2a3d;
+  background: $background;
 }

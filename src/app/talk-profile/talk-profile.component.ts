@@ -5,7 +5,7 @@ import { Talk } from 'src/types';
 @Component({
   selector: 'app-talk-profile',
   templateUrl: './talk-profile.component.html',
-  styleUrls: ['./talk-profile.component.css'],
+  styleUrls: ['./talk-profile.component.scss'],
 })
 export class TalkProfileComponent {
   @Input() talk?: Talk;
