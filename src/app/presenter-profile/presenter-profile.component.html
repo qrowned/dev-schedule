@@ -12,10 +12,10 @@
         height="100"
       />
     </figure>
-    <div style="display: block; line-height: 1">
+    <div class="presenter-block">
       <h2>{{ presenter.name }}</h2>
       <h4>{{ presenter.bio }}</h4>
-      <div style="display: flex; gap: 15px">
+      <div class="social-links">
         <a [href]="presenter.socialMedia.twitter"
           ><nx-icon name="twitter" font="fa" size="s"></nx-icon
         ></a>

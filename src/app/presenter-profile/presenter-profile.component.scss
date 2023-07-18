@@ -20,3 +20,13 @@ $image-border-radius: 7px;
   width: 100%;
   object-fit: cover;
 }
+
+.presenter-block {
+  display: block;
+  line-height: 1;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
