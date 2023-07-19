@@ -2,8 +2,8 @@
   *ngIf="stages().length > 0 && day"
   class="scroll-container tab__content table-outline"
 >
-  <div nxGrid class="timetable-grid">
-    <div nxRow>
+  <div class="timetable-grid">
+    <div nxRow *ngIf="!mobileView">
       <div nxCol="2"></div>
       <ng-container *ngFor="let stage of stages()">
         <div nxCol="2" class="stage-heading center">{{ stage.name }}</div>
@@ -12,11 +12,12 @@
     <ng-container *ngFor="let time of times">
       <div nxLayout="grid nogutters">
         <div nxRow>
-          <div nxCol="2" class="time">{{ time }}</div>
+          <!-- Defining different nxCol sizes for different display sizes -->
+          <div nxCol="12,12,12,2" class="time">{{ time }}</div>
           <ng-container *ngFor="let stage of stages()">
             <div
               *ngVar="getTalkByStageAndTime(stage, day, time) as talk"
-              [nxCol]="talk ? stage.size.toString() : '2'"
+              [nxCol]="'12,12,12,' + (talk ? stage.size.toString() : '2')"
               class="card-container"
             >
               <ng-container *ngIf="talk">
