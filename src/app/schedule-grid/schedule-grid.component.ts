@@ -47,6 +47,10 @@ export class ScheduleGridComponent implements OnInit {
       });
   }
 
+  getTalksByTime(day: Day, time: string): Talk[] {
+    return this.getTalksByDay(day).filter((talk) => talk.time.includes(time));
+  }
+
   getTalkByStageAndTime(
     stage: Stage,
     day: Day,

@@ -10,7 +10,10 @@
       </ng-container>
     </div>
     <ng-container *ngFor="let time of times">
-      <div nxLayout="grid nogutters">
+      <div
+        *ngIf="getTalksByTime(day, time).length > 0"
+        nxLayout="grid nogutters"
+      >
         <div nxRow>
           <!-- Defining different nxCol sizes for different display sizes -->
           <div nxCol="12,12,12,1" class="time">{{ time }}</div>
