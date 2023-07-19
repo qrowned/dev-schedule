@@ -4,7 +4,7 @@
 >
   <div class="timetable-grid">
     <div nxRow *ngIf="!mobileView">
-      <div nxCol="2"></div>
+      <div nxCol="1"></div>
       <ng-container *ngFor="let stage of stages()">
         <div nxCol="2" class="stage-heading center">{{ stage.name }}</div>
       </ng-container>
@@ -13,7 +13,7 @@
       <div nxLayout="grid nogutters">
         <div nxRow>
           <!-- Defining different nxCol sizes for different display sizes -->
-          <div nxCol="12,12,12,2" class="time">{{ time }}</div>
+          <div nxCol="12,12,12,1" class="time">{{ time }}</div>
           <ng-container *ngFor="let stage of stages()">
             <div
               *ngVar="getTalkByStageAndTime(stage, day, time) as talk"
