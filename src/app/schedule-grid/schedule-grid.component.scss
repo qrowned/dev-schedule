@@ -74,11 +74,5 @@ $talk-card-transition-time: 0.3s;
 }
 
 .card-content {
-  display: flex; /* Use flexbox to center the content horizontally and vertically */
-  justify-content: center; /* Center the content horizontally */
-  align-items: center;
-}
-
-.card-container h3 {
   text-align: center;
 }

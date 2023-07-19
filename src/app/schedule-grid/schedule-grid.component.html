@@ -21,16 +21,20 @@
             >
               <ng-container *ngIf="talk">
                 <nx-card
+                  [highlight]="stage.name.includes('Main')"
                   [class]="stage.color"
-                  class="button talk-card card-content"
+                  class="talk-card button"
                   (click)="dialogService.openTalkDialog(talk)"
                 >
-                  <h3>
-                    {{ talk.title }}
-                  </h3>
-                  <p>
-                    {{ talk.description }}
-                  </p>
+                  <!-- <div nxHighlightHeader><b>MAIN STAGE</b></div> -->
+                  <div class="card-content">
+                    <h3>
+                      {{ talk.title }}
+                    </h3>
+                    <p nxCopytext="normal">
+                      {{ talk.description }}
+                    </p>
+                  </div>
                 </nx-card>
               </ng-container>
             </div>
