@@ -1,6 +1,6 @@
 # Dev Schedule 📅🚀
 
-<a href="https://ibb.co/LR55w9k"><img src="https://i.ibb.co/7C44crY/schedule-svgrepo-com.png" alt="schedule-svgrepo-com" border="0" height=100 width=100></a>
+<img src="https://i.ibb.co/7C44crY/schedule-svgrepo-com.png" alt="schedule-svgrepo-com" border="0" height=100 width=100>
 
 Welcome to Dev Schedule! 🎉 This awesome Angular application is your one-stop destination for any Conferences, specifically ones for Developers. This application was designed for the Developer Conference by Allianz Technology in 2023. But it can be used for various other purposes. 🏋️‍♂️
 
@@ -24,11 +24,11 @@ You can experience a demo version on my GitHub Pages site. Just click **[here](h
 
 ## Screenshots 📸
 
-<a href="https://ibb.co/jwKNFKv"><img src="https://i.ibb.co/kDn7Fng/Desktop-Schedule.png" alt="Desktop-Schedule" border="0" width=672 height=378></a>
-<a href="https://ibb.co/9Zgp31X"><img src="https://i.ibb.co/QDQJjTB/Mobile-Schedule.jpg" alt="Mobile-Schedule" border="0" height=25% width=25%></a>
+<img src="https://i.postimg.cc/d0bqyXTc/Desktop-Schedule.png" alt="Desktop-Schedule" border="0">
+<img src="https://i.ibb.co/QDQJjTB/Mobile-Schedule.jpg" alt="Mobile-Schedule" border="0" height=25% width=25%>
 <p float="left">
-  <a href="https://ibb.co/f94cDC1"><img src="https://i.ibb.co/BGq1ngz/Talk-Information.png" alt="Talk-Information" border="0" height=40% width=40%></a>
-  <a href="https://ibb.co/wQ2JyZT"><img src="https://i.ibb.co/pKkW26g/Presenter-Information.png" alt="Presenter-Information" border="0" height=45% width=45%></a>
+  <img src="https://i.ibb.co/BGq1ngz/Talk-Information.png" alt="Talk-Information" border="0" height=40% width=40%>
+  <img src="https://i.ibb.co/pKkW26g/Presenter-Information.png" alt="Presenter-Information" border="0" height=45% width=45%>
 </p>
 
 ## Installation 🛠️
