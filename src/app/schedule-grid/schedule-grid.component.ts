@@ -15,6 +15,7 @@ export class ScheduleGridComponent implements OnInit {
   stages: WritableSignal<Stage[]>;
   times: string[];
   mobileView: boolean = false;
+  stageFilter?: string;
 
   constructor(
     public dialogService: DialogService,
@@ -35,6 +36,9 @@ export class ScheduleGridComponent implements OnInit {
   // Fetch every talks from the stages variable which happen on a certain day and return them as an array
   getTalksByDay(day: Day): Talk[] {
     return this.stages()
+      .filter((stage) =>
+        this.stageFilter ? stage.name === this.stageFilter : true
+      )
       ?.map((stage) => stage.talks)
       .flat()
       .filter((talk) => {
@@ -66,5 +70,11 @@ export class ScheduleGridComponent implements OnInit {
         }
       })
       .find((talk) => talk.time.includes(time));
+  }
+
+  getFilteredStages(name: string | undefined) {
+    if (!name) return this.stages();
+
+    return this.stages().filter((stage) => stage.name === name);
   }
 }
