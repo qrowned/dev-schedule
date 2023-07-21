@@ -8,6 +8,7 @@ $light-green: #5fcd8a;
 $dark-green: #00908d;
 $yellow: #fab600;
 $orange: #f86200;
+$blue: #003781;
 
 $talk-card-transition-time: 0.3s;
 
@@ -62,6 +63,11 @@ $talk-card-transition-time: 0.3s;
 
 .orange_bg {
   background-color: $orange;
+}
+
+.purple_bg {
+  background-color: $blue;
+  color: white;
 }
 
 .center {
