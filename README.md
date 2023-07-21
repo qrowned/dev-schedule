@@ -1,27 +1,70 @@
-# Dev Schedule
+# Dev Schedule 📅🚀
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+<a href="https://ibb.co/LR55w9k"><img src="https://i.ibb.co/7C44crY/schedule-svgrepo-com.png" alt="schedule-svgrepo-com" border="0" height=100 width=100></a>
 
-## Development server
+Welcome to Dev Schedule! 🎉 This awesome Angular application is your one-stop destination for any Conferences, specifically ones for Developers. This application was designed for the Developer Conference by Allianz Technology in 2023. But it can be used for various other purposes. 🏋️‍♂️
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Table of Contents 📚
 
-## Code scaffolding
+- [Features](#features-🌟)
+- [Screenshots](#screenshots-📸)
+- [Installation](#installation-🛠️)
+- [Usage](#usage-🚀)
+- [Contributing](#contributing-🤝)
+- [License](#license-📜)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features 🌟
 
-## Build
+- **Responsive Design:** Dev Schedule is all set to dazzle on any device! It's perfectly optimized for both desktop and mobile users. 📱💻
+- **Full Agenda Display:** Can't wait to know what's on the menu? Check out the complete conference schedule, jam-packed with captivating keynotes, engaging workshops, and epic social events! 🎤🏋️‍♂️🍻
+- **Talk Profiles:** Want to know more about a talk which is upcoming? Just look into a more detailed view about the talk and its topic! 📖
+- **Speaker Profiles:** Want to know more about the rockstars gracing the stage? Dive into detailed speaker profiles and their incredible sessions. 🎵🎤
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+You can experience a demo version on my GitHub Pages site. Just click **[here](https://qrowned.github.io/dev-schedule/)**.
 
-## Running unit tests
+## Screenshots 📸
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<a href="https://ibb.co/jwKNFKv"><img src="https://i.ibb.co/kDn7Fng/Desktop-Schedule.png" alt="Desktop-Schedule" border="0" width=672 height=378></a>
+<a href="https://ibb.co/9Zgp31X"><img src="https://i.ibb.co/QDQJjTB/Mobile-Schedule.jpg" alt="Mobile-Schedule" border="0" height=25% width=25%></a>
+<p float="left">
+  <a href="https://ibb.co/f94cDC1"><img src="https://i.ibb.co/BGq1ngz/Talk-Information.png" alt="Talk-Information" border="0" height=40% width=40%></a>
+  <a href="https://ibb.co/wQ2JyZT"><img src="https://i.ibb.co/pKkW26g/Presenter-Information.png" alt="Presenter-Information" border="0" height=45% width=45%></a>
+</p>
 
-## Running end-to-end tests
+## Installation 🛠️
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Excited to get started? Follow these super simple steps to set up the Dev Schedule application locally:
 
-## Further help
+1. Clone the repository: `git clone https://github.com/qrowned/dev-schedule.git`
+2. Navigate to the project directory: `cd dev-schedule`
+3. Install the dependencies: `npm install`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Usage 🚀
+
+Ready to launch the app? Just type the following command:
+
+```bash
+npm start
+```
+
+Fire up your favorite web browser and go to http://localhost:4200 to access Dev Schedule. Let the fun begin! 🎮😄
+
+## Contributing 🤝
+
+We're thrilled that you want to contribute to Dev Schedule! Together, we can make it even more amazing for everyone! Follow these steps to get started:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature-name`
+3. Commit your changes: `git commit -m "Add feature xyz"`
+4. Push to the branch: `git push origin feature/your-feature-name`
+5. Submit a pull request. 🚀🔧
+
+## License 📜
+
+This project is licensed under the [MIT License](LICENSE). Feel free to use it and make something awesome! ✨
+
+---
+
+Designed with ❤️ by Luca Bartmann within an internship at Allianz Technology.
+
+For any questions or support, drop us a message at admin@qrowned.dev. We'd love to chat! 😊📧
