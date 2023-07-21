@@ -37,7 +37,9 @@ export class ScheduleGridComponent implements OnInit {
   getTalksByDay(day: Day): Talk[] {
     return this.stages()
       .filter((stage) =>
-        this.stageFilter ? stage.name === this.stageFilter : true
+        this.stageFilter && this.mobileView // check if the stageFilter is set and if the mobile view is active
+          ? stage.name === this.stageFilter
+          : true
       )
       ?.map((stage) => stage.talks)
       .flat()
@@ -73,7 +75,7 @@ export class ScheduleGridComponent implements OnInit {
   }
 
   getFilteredStages(name: string | undefined) {
-    if (!name) return this.stages();
+    if (!name || !this.mobileView) return this.stages(); // check if name is undefined or if the mobile view is active
 
     return this.stages().filter((stage) => stage.name === name);
   }
