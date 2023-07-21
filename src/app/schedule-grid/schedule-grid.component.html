@@ -1,11 +1,30 @@
 <div
-  *ngIf="stages().length > 0 && day"
+  *ngIf="
+    stages().length > 0 &&
+    day &&
+    getFilteredStages(stageFilter) as filteredStages
+  "
   class="scroll-container tab__content table-outline"
 >
+  <div *ngIf="mobileView">
+    <nx-formfield
+      label="Filter stages"
+      appearance="outline"
+      floatLabel="always"
+    >
+      <nx-dropdown [(ngModel)]="stageFilter">
+        <nx-dropdown-item>ALL</nx-dropdown-item>
+        <nx-dropdown-item
+          *ngFor="let stage of stages()"
+          [value]="stage.name"
+        ></nx-dropdown-item>
+      </nx-dropdown>
+    </nx-formfield>
+  </div>
   <div class="timetable-grid">
     <div nxRow *ngIf="!mobileView">
       <div nxCol="1"></div>
-      <ng-container *ngFor="let stage of stages()">
+      <ng-container *ngFor="let stage of filteredStages">
         <div nxCol="2" class="stage-heading center">{{ stage.name }}</div>
       </ng-container>
     </div>
@@ -17,7 +36,7 @@
         <div nxRow>
           <!-- Defining different nxCol sizes for different display sizes -->
           <div nxCol="12,12,12,1" class="time">{{ time }}</div>
-          <ng-container *ngFor="let stage of stages()">
+          <ng-container *ngFor="let stage of filteredStages">
             <div
               *ngVar="getTalkByStageAndTime(stage, day, time) as talk"
               [nxCol]="'12,12,12,' + (talk ? stage.size.toString() : '2')"
