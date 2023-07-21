@@ -51,6 +51,9 @@
                 >
                   <!-- <div nxHighlightHeader><b>MAIN STAGE</b></div> -->
                   <div class="card-content">
+                    <nx-badge *ngIf="mobileView" class="purple_bg">{{
+                      stage.name
+                    }}</nx-badge>
                     <h3>
                       {{ talk.title }}
                     </h3>
