@@ -9,6 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@angular/animations": "^16.1.0",
