@@ -27,4 +27,9 @@ describe('DataServiceService', () => {
     const req = httpMock.match('assets/data.json');
     expect(req.length).toBe(1);
   });
+
+  it('should have two signals created', () => {
+    expect(service.days).toBeTruthy();
+    expect(service.stages).toBeTruthy();
+  });
 });
