@@ -20,11 +20,24 @@ import { NxOverlayModule } from '@aposin/ng-aquila/overlay';
 import { NxPopoverModule } from '@aposin/ng-aquila/popover';
 
 import { AppComponent } from './app.component';
+import { CommonModule, DatePipe } from '@angular/common';
+import { CustomDialogComponent } from './custom-dialog/custom-dialog.component';
+import { NgVar } from './ng-var.directive';
+import { PresenterProfileComponent } from './presenter-profile/presenter-profile.component';
+import { ScheduleGridComponent } from './schedule-grid/schedule-grid.component';
+import { TalkProfileComponent } from './talk-profile/talk-profile.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AppComponent],
+      declarations: [
+        AppComponent,
+        ScheduleGridComponent,
+        PresenterProfileComponent,
+        CustomDialogComponent,
+        TalkProfileComponent,
+        NgVar,
+      ],
       imports: [
         BrowserModule,
         BrowserAnimationsModule,
@@ -47,7 +60,21 @@ describe('AppComponent', () => {
         NxModalModule,
         NxOverlayModule,
         NxPopoverModule,
+        CommonModule,
       ],
+      providers: [DatePipe],
     }).compileComponents();
+  });
+
+  it('should create the app', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app).toBeTruthy();
+  });
+
+  it('should have the times configured', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.times).toBeDefined();
   });
 });

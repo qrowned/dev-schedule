@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ScheduleGridComponent } from './schedule-grid.component';
+import { NxModalModule } from '@aposin/ng-aquila/modal';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('ScheduleGridComponent', () => {
   let component: ScheduleGridComponent;
@@ -8,7 +10,8 @@ describe('ScheduleGridComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ScheduleGridComponent]
+      declarations: [ScheduleGridComponent],
+      imports: [NxModalModule, HttpClientModule],
     });
     fixture = TestBed.createComponent(ScheduleGridComponent);
     component = fixture.componentInstance;

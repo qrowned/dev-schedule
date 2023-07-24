@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TalkProfileComponent } from './talk-profile.component';
+import { NxModalModule } from '@aposin/ng-aquila/modal';
 
 describe('TalkProfileComponent', () => {
   let component: TalkProfileComponent;
@@ -9,6 +10,7 @@ describe('TalkProfileComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [TalkProfileComponent],
+      imports: [NxModalModule],
     });
     fixture = TestBed.createComponent(TalkProfileComponent);
     component = fixture.componentInstance;
