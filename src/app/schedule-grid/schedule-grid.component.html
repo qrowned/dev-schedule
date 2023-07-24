@@ -60,6 +60,16 @@
                     <p nxCopytext="normal">
                       {{ talk.description }}
                     </p>
+                    <nx-link nxStyle="icon-left">
+                      <!-- Using event#stopPropagation to stop it from executing card click -->
+                      <a
+                        [href]="talk.webExLink"
+                        (click)="$event.stopPropagation()"
+                      >
+                        <nx-icon name="camera" font="fa" size="s"></nx-icon>
+                        Join here!
+                      </a>
+                    </nx-link>
                   </div>
                 </nx-card>
               </ng-container>

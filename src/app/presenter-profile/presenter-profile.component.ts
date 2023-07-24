@@ -26,8 +26,6 @@ export class PresenterProfileComponent {
       'linkedin-custom',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/linkedin.svg')
     );
-
-    this.nxIconRegistry.registerFont('fa', 'fa', 'fa-');
   }
 
   getTalksForPresenter(presenter: Presenter): Talk[] {
