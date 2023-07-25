@@ -1,3 +1,9 @@
+<div nxRow *ngIf="!dataService.mobileView">
+  <div nxCol="1"></div>
+  <ng-container *ngFor="let stage of filteredStages">
+    <div nxCol="2.5" class="stage-heading center">{{ stage.name }}</div>
+  </ng-container>
+</div>
 <ng-container *ngFor="let time of times">
   <div
     *ngIf="day && getTalksByTime(day, time).length > 0"
@@ -9,7 +15,7 @@
       <ng-container *ngFor="let stage of filteredStages">
         <div
           *ngVar="getTalkByStageAndTime(stage, day, time) as talk"
-          [nxCol]="'12,12,12,' + (talk ? stage.size.toString() : '2')"
+          [nxCol]="dataService.mobileView ? '12' : '2.5'"
           class="card-container"
         >
           <ng-container *ngIf="talk">
@@ -21,7 +27,7 @@
             >
               <!-- <div nxHighlightHeader><b>MAIN STAGE</b></div> -->
               <div class="card-content">
-                <nx-badge *ngIf="mobileView" class="purple_bg">{{
+                <nx-badge *ngIf="dataService.mobileView" class="purple_bg">{{
                   stage.name
                 }}</nx-badge>
                 <h3>

@@ -1,9 +1,5 @@
 <div
-  *ngIf="
-    stages().length > 0 &&
-    day &&
-    getFilteredStages(stageFilter) as filteredStages
-  "
+  *ngIf="stages().length > 0 && day && getFilteredStages() as filteredStages"
   class="scroll-container tab__content table-outline"
 >
   <div *ngIf="dataService.mobileView">
@@ -21,16 +17,14 @@
       </nx-dropdown>
     </nx-formfield>
   </div>
-  <app-main-stage />
+
   <div class="timetable-grid">
-    <div nxRow *ngIf="!dataService.mobileView">
-      <div nxCol="1"></div>
-      <ng-container *ngFor="let stage of filteredStages">
-        <div nxCol="2" class="stage-heading center">{{ stage.name }}</div>
-      </ng-container>
-    </div>
-    <!-- component -->
-    <app-common-stages [day]="day" [filteredStages]="filteredStages" />
+    <app-main-stage [stage]="stages()[0]" [talks]="getStartMainStageTalks()" />
+    <app-common-stages
+      style="margin: 10px"
+      [day]="day"
+      [filteredStages]="getCommonStages()"
+    />
+    <app-main-stage [stage]="stages()[0]" [talks]="getEndMainStageTalks()" />
   </div>
-  <app-main-stage />
 </div>

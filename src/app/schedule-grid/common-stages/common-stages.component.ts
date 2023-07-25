@@ -12,15 +12,16 @@ export class CommonStagesComponent {
   @Input() filteredStages: Stage[] = [];
   @Input() day?: Day;
   times: string[] = this.dataService.times;
-  mobileView: boolean = false;
 
   constructor(
     public dialogService: DialogService,
-    private dataService: DataService
+    public dataService: DataService
   ) {}
 
   getTalksByTime(day: Day, time: string): Talk[] {
-    return this.getTalksByDay(day).filter((talk) => talk.time.includes(time));
+    return this.getTalksByDay(day).filter((talk) =>
+      time.split(' - ')[0].includes(talk.startTime)
+    );
   }
 
   getTalkByStageAndTime(
@@ -29,15 +30,8 @@ export class CommonStagesComponent {
     time: string
   ): Talk | undefined {
     return stage.talks
-      .filter((talk) => {
-        try {
-          let dayId: string = talk.time.split(',')[0].split(' ')[1];
-          return dayId === day.id.toString();
-        } catch (error) {
-          return [];
-        }
-      })
-      .find((talk) => talk.time.includes(time));
+      .filter((talk) => talk.day == day.id)
+      .find((talk) => time.split(' - ')[0].includes(talk.startTime));
   }
 
   // Fetch every talks from the stages variable which happen on a certain day and return them as an array
@@ -45,13 +39,6 @@ export class CommonStagesComponent {
     return this.filteredStages
       .map((stage) => stage.talks)
       .flat()
-      .filter((talk) => {
-        try {
-          let dayId: string = talk.time.split(',')[0].split(' ')[1];
-          return dayId === day.id.toString();
-        } catch (error) {
-          return [];
-        }
-      });
+      .filter((talk) => talk.day == day.id);
   }
 }
