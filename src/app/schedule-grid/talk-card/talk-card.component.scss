@@ -1,0 +1,59 @@
+$hover-color: rgba(0, 0, 0, 0.3);
+
+$red: #f62459;
+$light-green: #5fcd8a;
+$dark-green: #00908d;
+$yellow: #fab600;
+$orange: #f86200;
+$blue: #003781;
+
+$talk-card-transition-time: 0.3s;
+
+.talk-card {
+  display: block;
+  margin: 0px;
+  transition: box-shadow $talk-card-transition-time ease;
+  flex: 1;
+}
+
+.talk-card:hover {
+  box-shadow: 0 20px 10px $hover-color;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.red_bg {
+  background-color: $red;
+}
+
+.light_green_bg {
+  background-color: $light-green;
+}
+
+.dark_green_bg {
+  background-color: $dark-green;
+}
+
+.yellow_bg {
+  background-color: $yellow;
+}
+
+.orange_bg {
+  background-color: $orange;
+}
+
+.purple_bg {
+  background-color: $blue;
+  color: white;
+}
+
+.card-content {
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+}

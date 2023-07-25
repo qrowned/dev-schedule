@@ -1,17 +1,6 @@
 $timetable-margin-right: 0px;
 $timetable-margin-top: 30px;
 
-$hover-color: rgba(0, 0, 0, 0.3);
-
-$red: #f62459;
-$light-green: #5fcd8a;
-$dark-green: #00908d;
-$yellow: #fab600;
-$orange: #f86200;
-$blue: #003781;
-
-$talk-card-transition-time: 0.3s;
-
 .timetable-grid {
   margin-right: $timetable-margin-right;
   margin-top: $timetable-margin-top;
@@ -23,51 +12,11 @@ $talk-card-transition-time: 0.3s;
   margin-bottom: 20px;
 }
 
-.talk-card {
-  display: block;
-  margin: 0px;
-  transition: box-shadow $talk-card-transition-time ease;
-  flex: 1;
-}
-
-.talk-card:hover {
-  box-shadow: 0 20px 10px $hover-color;
-}
-
 .time {
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-}
-
-.button {
-  cursor: pointer;
-}
-
-.red_bg {
-  background-color: $red;
-}
-
-.light_green_bg {
-  background-color: $light-green;
-}
-
-.dark_green_bg {
-  background-color: $dark-green;
-}
-
-.yellow_bg {
-  background-color: $yellow;
-}
-
-.orange_bg {
-  background-color: $orange;
-}
-
-.purple_bg {
-  background-color: $blue;
-  color: white;
 }
 
 .center {
@@ -78,8 +27,4 @@ $talk-card-transition-time: 0.3s;
 .card-container {
   display: flex;
   flex-direction: column;
-}
-
-.card-content {
-  text-align: center;
 }

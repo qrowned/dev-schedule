@@ -37,6 +37,7 @@ import { TalkProfileComponent } from './talk-profile/talk-profile.component';
 import { NgVar } from './ng-var.directive';
 import { MainStageComponent } from './schedule-grid/main-stage/main-stage.component';
 import { CommonStagesComponent } from './schedule-grid/common-stages/common-stages.component';
+import { TalkCardComponent } from './schedule-grid/talk-card/talk-card.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { CommonStagesComponent } from './schedule-grid/common-stages/common-stag
     NgVar,
     MainStageComponent,
     CommonStagesComponent,
+    TalkCardComponent,
   ],
   imports: [
     BrowserModule,
