@@ -35,6 +35,8 @@ import { PresenterProfileComponent } from './presenter-profile/presenter-profile
 import { CustomDialogComponent } from './custom-dialog/custom-dialog.component';
 import { TalkProfileComponent } from './talk-profile/talk-profile.component';
 import { NgVar } from './ng-var.directive';
+import { MainStageComponent } from './schedule-grid/main-stage/main-stage.component';
+import { CommonStagesComponent } from './schedule-grid/common-stages/common-stages.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +46,8 @@ import { NgVar } from './ng-var.directive';
     CustomDialogComponent,
     TalkProfileComponent,
     NgVar,
+    MainStageComponent,
+    CommonStagesComponent,
   ],
   imports: [
     BrowserModule,
