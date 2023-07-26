@@ -38,6 +38,7 @@ Excited to get started? Follow these super simple steps to set up the Dev Schedu
 1. Clone the repository: `git clone https://github.com/qrowned/dev-schedule.git`
 2. Navigate to the project directory: `cd dev-schedule`
 3. Install the dependencies: `npm install`
+4. Update the data located in `src/assets/data.json` with your schedule data.
 
 ## Usage 🚀
 
