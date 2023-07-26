@@ -18,7 +18,7 @@
     </nx-formfield>
   </div>
 
-  <div class="timetable-grid">
+  <div class="timetable-grid" nxLayout="grid nogutters">
     <app-main-stage [stage]="stages()[0]" [talks]="getStartMainStageTalks()" />
     <app-common-stages
       style="margin: 10px"

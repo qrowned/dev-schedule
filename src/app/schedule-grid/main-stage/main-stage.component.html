@@ -4,48 +4,43 @@
     <div nxCol="11" class="stage-heading center">{{ stage.name }}</div>
   </div>
   <ng-container *ngFor="let time of times">
-    <div *ngIf="getTalksByTime(time).length > 0" nxLayout="grid nogutters">
-      <div nxRow>
-        <div nxCol="12,12,12,1" class="time">{{ time }}</div>
-        <ng-container>
-          <div
-            *ngVar="getTalksByTime(time)[0] as talk"
-            [nxCol]="dataService.mobileView ? '12' : '2.5'"
-            class="card-container"
-          >
-            <ng-container>
-              <nx-card
-                [class]="stage.color"
-                class="talk-card button"
-                (click)="dialogService.openTalkDialog(talk)"
-              >
-                <!-- <div nxHighlightHeader><b>MAIN STAGE</b></div> -->
-                <div class="card-content">
-                  <nx-badge *ngIf="dataService.mobileView" class="purple_bg">{{
-                    stage.name
-                  }}</nx-badge>
-                  <h3>
-                    {{ talk.title }}
-                  </h3>
-                  <p nxCopytext="normal">
-                    {{ talk.description }}
-                  </p>
-                  <nx-link nxStyle="icon-left">
-                    <!-- Using event#stopPropagation to stop it from executing card click -->
-                    <a
-                      [href]="talk.webExLink"
-                      (click)="$event.stopPropagation()"
-                    >
-                      <nx-icon name="camera" font="fa" size="s"></nx-icon>
-                      Join here!
-                    </a>
-                  </nx-link>
-                </div>
-              </nx-card>
-            </ng-container>
-          </div>
-        </ng-container>
-      </div>
+    <div nxRow *ngIf="getTalksByTime(time).length > 0">
+      <div nxCol="12,12,12,1" class="time">{{ time }}</div>
+      <ng-container>
+        <div
+          *ngVar="getTalksByTime(time)[0] as talk"
+          [nxCol]="dataService.mobileView ? '12' : '2.5'"
+          class="card-container"
+        >
+          <ng-container>
+            <nx-card
+              [class]="stage.color"
+              class="talk-card button"
+              (click)="dialogService.openTalkDialog(talk)"
+            >
+              <!-- <div nxHighlightHeader><b>MAIN STAGE</b></div> -->
+              <div class="card-content">
+                <nx-badge *ngIf="dataService.mobileView" class="purple_bg">{{
+                  stage.name
+                }}</nx-badge>
+                <h3>
+                  {{ talk.title }}
+                </h3>
+                <p nxCopytext="normal">
+                  {{ talk.description }}
+                </p>
+                <nx-link nxStyle="icon-left">
+                  <!-- Using event#stopPropagation to stop it from executing card click -->
+                  <a [href]="talk.webExLink" (click)="$event.stopPropagation()">
+                    <nx-icon name="camera" font="fa" size="s"></nx-icon>
+                    Join here!
+                  </a>
+                </nx-link>
+              </div>
+            </nx-card>
+          </ng-container>
+        </div>
+      </ng-container>
     </div>
   </ng-container>
 </div>
