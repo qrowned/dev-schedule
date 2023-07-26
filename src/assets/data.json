@@ -17,16 +17,16 @@
       "talks": [
         {
           "title": "Day 1 Opening Keynote",
-          "description": "The Future of Technology: Trends and Innovations",
+          "description": "The internship at Allianz Technology: A journey of learning and growth",
           "presenters": [
             {
-              "name": "John Doe",
-              "email": "john.doe@example.com",
-              "bio": "John Doe is a technology visionary with over 15 years of experience...",
-              "company": "ABC Corporation",
+              "name": "Luca Bartmann",
+              "email": "admin@lucabartmann.me",
+              "bio": "Luca is a 16 year old intern at Allianz Technology. He created the schedule for the Allianz eMerge 2023 within this internship at Allianz Technology. He was very happy to participate in this internship and is looking forward to the next one :^)",
+              "company": "Allianz Technology SE",
               "socialMedia": {
-                "twitter": "https://twitter.com/johndoe",
-                "linkedin": "https://linkedin.com/in/johndoe"
+                "twitter": "https://twitter.com/luca.bartmann",
+                "linkedin": "https://www.linkedin.com/in/luca-bartmann-2b7783285/"
               },
               "picture": "https://avatars.githubusercontent.com/u/91695516"
             }
@@ -49,8 +49,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/janesmith",
                 "linkedin": "https://linkedin.com/in/janesmith"
-              },
-              "picture": "https://avatars.githubusercontent.com/u/91695516"
+              }
             }
           ],
           "startTime": "10:00",
@@ -71,8 +70,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/michaeljohnson",
                 "linkedin": "https://linkedin.com/in/michaeljohnson"
-              },
-              "picture": "https://example.com/michaeljohnson.jpg"
+              }
             }
           ],
           "startTime": "17:00",
@@ -93,8 +91,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/sarahwilson",
                 "linkedin": "https://linkedin.com/in/sarahwilson"
-              },
-              "picture": "https://example.com/sarahwilson.jpg"
+              }
             }
           ],
           "startTime": "18:00",
@@ -115,8 +112,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/markjohnson",
                 "linkedin": "https://linkedin.com/in/markjohnson"
-              },
-              "picture": "https://example.com/markjohnson.jpg"
+              }
             }
           ],
           "startTime": "09:00",
@@ -137,8 +133,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/emilydavis",
                 "linkedin": "https://linkedin.com/in/emilydavis"
-              },
-              "picture": "https://example.com/emilydavis.jpg"
+              }
             }
           ],
           "startTime": "10:00",
@@ -159,8 +154,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/davidthompson",
                 "linkedin": "https://linkedin.com/in/davidthompson"
-              },
-              "picture": "https://example.com/davidthompson.jpg"
+              }
             }
           ],
           "startTime": "17:00",
@@ -181,8 +175,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/alexandrawilson",
                 "linkedin": "https://linkedin.com/in/alexandrawilson"
-              },
-              "picture": "https://example.com/alexandrawilson.jpg"
+              }
             }
           ],
           "startTime": "18:00",
@@ -210,8 +203,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/robertsmith",
                 "linkedin": "https://linkedin.com/in/robertsmith"
-              },
-              "picture": "https://example.com/robertsmith.jpg"
+              }
             }
           ],
           "startTime": "11:00",
@@ -232,8 +224,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/alexbrown",
                 "linkedin": "https://linkedin.com/in/alexbrown"
-              },
-              "picture": "https://example.com/alexbrown.jpg"
+              }
             }
           ],
           "startTime": "15:00",
@@ -254,8 +245,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/jessicawilson",
                 "linkedin": "https://linkedin.com/in/jessicawilson"
-              },
-              "picture": "https://example.com/jessicawilson.jpg"
+              }
             }
           ],
           "startTime": "12:00",
@@ -276,8 +266,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/michaeljohnson",
                 "linkedin": "https://linkedin.com/in/michaeljohnson"
-              },
-              "picture": "https://example.com/michaeljohnson.jpg"
+              }
             }
           ],
           "startTime": "13:00",
@@ -298,8 +287,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/amydavis",
                 "linkedin": "https://linkedin.com/in/amydavis"
-              },
-              "picture": "https://example.com/amydavis.jpg"
+              }
             }
           ],
           "startTime": "11:00",
@@ -320,8 +308,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/williamjohnson",
                 "linkedin": "https://linkedin.com/in/williamjohnson"
-              },
-              "picture": "https://example.com/williamjohnson.jpg"
+              }
             }
           ],
           "startTime": "12:00",
@@ -346,8 +333,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/oliviasmith",
                 "linkedin": "https://linkedin.com/in/oliviasmith"
-              },
-              "picture": "https://example.com/oliviasmith.jpg"
+              }
             }
           ],
           "startTime": "13:00",
@@ -368,8 +354,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/christopherwilson",
                 "linkedin": "https://linkedin.com/in/christopherwilson"
-              },
-              "picture": "https://example.com/christopherwilson.jpg"
+              }
             }
           ],
           "startTime": "14:00",
@@ -401,8 +386,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/sarahjohnson",
                 "linkedin": "https://linkedin.com/in/sarahjohnson"
-              },
-              "picture": "https://example.com/sarahjohnson.jpg"
+              }
             }
           ],
           "startTime": "12:00",
@@ -423,8 +407,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/laurawilson",
                 "linkedin": "https://linkedin.com/in/laurawilson"
-              },
-              "picture": "https://example.com/laurawilson.jpg"
+              }
             }
           ],
           "startTime": "11:00",
@@ -445,8 +428,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/danielanderson",
                 "linkedin": "https://linkedin.com/in/danielanderson"
-              },
-              "picture": "https://example.com/danielanderson.jpg"
+              }
             }
           ],
           "startTime": "12:00",
@@ -467,8 +449,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/jamesthompson",
                 "linkedin": "https://linkedin.com/in/jamesthompson"
-              },
-              "picture": "https://example.com/jamesthompson.jpg"
+              }
             }
           ],
           "startTime": "13:00",
@@ -489,8 +470,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/emilywilson",
                 "linkedin": "https://linkedin.com/in/emilywilson"
-              },
-              "picture": "https://example.com/emilywilson.jpg"
+              }
             }
           ],
           "startTime": "14:00",
@@ -511,8 +491,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/michaelthompson",
                 "linkedin": "https://linkedin.com/in/michaelthompson"
-              },
-              "picture": "https://example.com/michaelthompson.jpg"
+              }
             }
           ],
           "startTime": "11:00",
@@ -537,8 +516,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/sophiawilson",
                 "linkedin": "https://linkedin.com/in/sophiawilson"
-              },
-              "picture": "https://example.com/sophiawilson.jpg"
+              }
             }
           ],
           "startTime": "12:00",
@@ -563,8 +541,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/thomasanderson",
                 "linkedin": "https://linkedin.com/in/thomasanderson"
-              },
-              "picture": "https://example.com/thomasanderson.jpg"
+              }
             }
           ],
           "startTime": "13:00",
@@ -585,8 +562,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/benjamindavis",
                 "linkedin": "https://linkedin.com/in/benjamindavis"
-              },
-              "picture": "https://example.com/benjamindavis.jpg"
+              }
             }
           ],
           "startTime": "14:00",
@@ -614,8 +590,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/emilydavis",
                 "linkedin": "https://linkedin.com/in/emilydavis"
-              },
-              "picture": "https://example.com/emilydavis.jpg"
+              }
             }
           ],
           "startTime": "13:00",
@@ -636,8 +611,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/robertmiller",
                 "linkedin": "https://linkedin.com/in/robertmiller"
-              },
-              "picture": "https://example.com/robertmiller.jpg"
+              }
             }
           ],
           "startTime": "11:00",
@@ -658,8 +632,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/sarahdavis",
                 "linkedin": "https://linkedin.com/in/sarahdavis"
-              },
-              "picture": "https://example.com/sarahdavis.jpg"
+              }
             }
           ],
           "startTime": "12:00",
@@ -680,8 +653,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/johnwilson",
                 "linkedin": "https://linkedin.com/in/johnwilson"
-              },
-              "picture": "https://example.com/johnwilson.jpg"
+              }
             }
           ],
           "startTime": "13:00",
@@ -702,8 +674,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/jessicamiller",
                 "linkedin": "https://linkedin.com/in/jessicamiller"
-              },
-              "picture": "https://example.com/jessicamiller.jpg"
+              }
             }
           ],
           "startTime": "16:00",
@@ -724,8 +695,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/emmajohnson",
                 "linkedin": "https://linkedin.com/in/emmajohnson"
-              },
-              "picture": "https://example.com/emmajohnson.jpg"
+              }
             }
           ],
           "startTime": "11:00",
@@ -746,8 +716,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/ethanwilson",
                 "linkedin": "https://linkedin.com/in/ethanwilson"
-              },
-              "picture": "https://example.com/ethanwilson.jpg"
+              }
             }
           ],
           "startTime": "12:00",
@@ -768,8 +737,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/gracethompson",
                 "linkedin": "https://linkedin.com/in/gracethompson"
-              },
-              "picture": "https://example.com/gracethompson.jpg"
+              }
             }
           ],
           "startTime": "13:00",
@@ -790,8 +758,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/samuelwilson",
                 "linkedin": "https://linkedin.com/in/samuelwilson"
-              },
-              "picture": "https://example.com/samuelwilson.jpg"
+              }
             }
           ],
           "startTime": "14:00",
@@ -823,8 +790,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/michaelaanderson",
                 "linkedin": "https://linkedin.com/in/michaelaanderson"
-              },
-              "picture": "https://example.com/michaelaanderson.jpg"
+              }
             }
           ],
           "startTime": "14:00",
@@ -849,8 +815,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/rachelthompson",
                 "linkedin": "https://linkedin.com/in/rachelthompson"
-              },
-              "picture": "https://example.com/rachelthompson.jpg"
+              }
             }
           ],
           "startTime": "11:00",
@@ -875,8 +840,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/danielsmith",
                 "linkedin": "https://linkedin.com/in/danielsmith"
-              },
-              "picture": "https://example.com/danielsmith.jpg"
+              }
             }
           ],
           "startTime": "12:00",
@@ -901,8 +865,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/andrewwilson",
                 "linkedin": "https://linkedin.com/in/andrewwilson"
-              },
-              "picture": "https://example.com/andrewwilson.jpg"
+              }
             }
           ],
           "startTime": "13:00",
@@ -927,8 +890,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/alexjohnson",
                 "linkedin": "https://linkedin.com/in/alexjohnson"
-              },
-              "picture": "https://example.com/alexjohnson.jpg"
+              }
             }
           ],
           "startTime": "14:00",
@@ -953,8 +915,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/sophiewilson",
                 "linkedin": "https://linkedin.com/in/sophiewilson"
-              },
-              "picture": "https://example.com/sophiewilson.jpg"
+              }
             }
           ],
           "startTime": "11:00",
@@ -979,8 +940,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/jacobjohnson",
                 "linkedin": "https://linkedin.com/in/jacobjohnson"
-              },
-              "picture": "https://example.com/jacobjohnson.jpg"
+              }
             }
           ],
           "startTime": "12:00",
@@ -1005,8 +965,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/nathandavis",
                 "linkedin": "https://linkedin.com/in/nathandavis"
-              },
-              "picture": "https://example.com/nathandavis.jpg"
+              }
             }
           ],
           "startTime": "13:00",
@@ -1031,8 +990,7 @@
               "socialMedia": {
                 "twitter": "https://twitter.com/sophiamiller",
                 "linkedin": "https://linkedin.com/in/sophiamiller"
-              },
-              "picture": "https://example.com/sophiamiller.jpg"
+              }
             }
           ],
           "startTime": "14:00",
