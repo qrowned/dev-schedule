@@ -24,7 +24,7 @@ You can experience a demo version on my GitHub Pages site. Just click **[here](h
 
 ## Screenshots 📸
 
-<img src="https://i.postimg.cc/d0bqyXTc/Desktop-Schedule.png" alt="Desktop-Schedule" border="0">
+<img src="https://i.postimg.cc/DfdsvNLz/Dev-Schedule-Desktop.png" alt="Desktop-Schedule" border="0">
 <img src="https://i.ibb.co/QDQJjTB/Mobile-Schedule.jpg" alt="Mobile-Schedule" border="0" height=25% width=25%>
 <p float="left">
   <img src="https://i.ibb.co/BGq1ngz/Talk-Information.png" alt="Talk-Information" border="0" height=40% width=40%>
