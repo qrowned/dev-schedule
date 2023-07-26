@@ -1,5 +1,5 @@
 <div *ngIf="presenter">
-  <div class="header-box">
+  <div style="display: flex; gap: 10px">
     <figure nxFigure class="image-figure">
       <img
         [ngSrc]="
@@ -12,17 +12,19 @@
         height="100"
       />
     </figure>
-    <div class="presenter-block">
+  </div>
+  <div class="header-box">
+    <div>
       <h2>{{ presenter.name }}</h2>
       <h4>{{ presenter.bio }}</h4>
-      <div class="social-links">
-        <a [href]="presenter.socialMedia.twitter"
-          ><nx-icon name="twitter" font="fa" size="s"></nx-icon
-        ></a>
-        <a [href]="presenter.socialMedia.linkedin"
-          ><nx-icon name="linkedin-custom" size="s"></nx-icon
-        ></a>
-      </div>
+    </div>
+    <div class="social-links">
+      <a [href]="presenter.socialMedia.twitter"
+        ><nx-icon name="twitter" font="fa" size="s"></nx-icon
+      ></a>
+      <a [href]="presenter.socialMedia.linkedin"
+        ><nx-icon name="linkedin-custom" size="s"></nx-icon
+      ></a>
     </div>
   </div>
   <nx-link *ngFor="let talk of getTalksForPresenter(presenter)" nxStyle="block">
