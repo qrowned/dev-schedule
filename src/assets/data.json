@@ -31,7 +31,8 @@
               "picture": "https://avatars.githubusercontent.com/u/91695516"
             }
           ],
-          "time": "Day 1, 09:00 - 10:00",
+          "startTime": "09:00",
+          "endTime": "10:00",
           "day": 1,
           "tags": ["Keynote", "Technology Trends"],
           "webExLink": "https://example.com/webex-link"
@@ -52,7 +53,9 @@
               "picture": "https://avatars.githubusercontent.com/u/91695516"
             }
           ],
-          "time": "Day 1, 10:00 - 11:00",
+          "startTime": "10:00",
+          "endTime": "11:00",
+          "day": 1,
           "tags": ["Digital Transformation", "Business Strategy"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -72,7 +75,9 @@
               "picture": "https://example.com/michaeljohnson.jpg"
             }
           ],
-          "time": "Day 1, 17:00 - 18:00",
+          "startTime": "17:00",
+          "endTime": "18:00",
+          "day": 1,
           "tags": ["Leadership", "Team Building"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -92,7 +97,9 @@
               "picture": "https://example.com/sarahwilson.jpg"
             }
           ],
-          "time": "Day 1, 18:00 - 19:00",
+          "startTime": "18:00",
+          "endTime": "19:00",
+          "day": 1,
           "tags": ["Future of Work", "Change Management"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -112,7 +119,9 @@
               "picture": "https://example.com/markjohnson.jpg"
             }
           ],
-          "time": "Day 2, 09:00 - 10:00",
+          "startTime": "09:00",
+          "endTime": "10:00",
+          "day": 2,
           "tags": ["Keynote", "Innovation"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -132,7 +141,9 @@
               "picture": "https://example.com/emilydavis.jpg"
             }
           ],
-          "time": "Day 2, 10:00 - 11:00",
+          "startTime": "10:00",
+          "endTime": "11:00",
+          "day": 2,
           "tags": ["Storytelling", "Communication"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -152,7 +163,9 @@
               "picture": "https://example.com/davidthompson.jpg"
             }
           ],
-          "time": "Day 2, 17:00 - 18:00",
+          "startTime": "17:00",
+          "endTime": "18:00",
+          "day": 2,
           "tags": ["Artificial Intelligence", "Ethics"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -172,7 +185,9 @@
               "picture": "https://example.com/alexandrawilson.jpg"
             }
           ],
-          "time": "Day 2, 18:00 - 19:00",
+          "startTime": "18:00",
+          "endTime": "19:00",
+          "day": 2,
           "tags": ["Future Technology", "Predictions"],
           "webExLink": "https://example.com/webex-link"
         }
@@ -199,7 +214,9 @@
               "picture": "https://example.com/robertsmith.jpg"
             }
           ],
-          "time": "Day 1, 11:00 - 12:00",
+          "startTime": "11:00",
+          "endTime": "12:00",
+          "day": 1,
           "tags": ["Microservices", "Kubernetes", "Scaling"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -219,7 +236,9 @@
               "picture": "https://example.com/alexbrown.jpg"
             }
           ],
-          "time": "Day 1, 15:00 - 16:00",
+          "startTime": "15:00",
+          "endTime": "16:00",
+          "day": 1,
           "tags": ["Backend Development", "GraphQL", "APIs"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -239,7 +258,9 @@
               "picture": "https://example.com/jessicawilson.jpg"
             }
           ],
-          "time": "Day 1, 12:00 - 13:00",
+          "startTime": "12:00",
+          "endTime": "13:00",
+          "day": 1,
           "tags": ["Microservices", "Resilience", "Architecture"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -259,7 +280,9 @@
               "picture": "https://example.com/michaeljohnson.jpg"
             }
           ],
-          "time": "Day 1, 13:00 - 14:00",
+          "startTime": "13:00",
+          "endTime": "14:00",
+          "day": 1,
           "tags": ["API Security", "OAuth 2.0", "Authentication"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -279,7 +302,9 @@
               "picture": "https://example.com/amydavis.jpg"
             }
           ],
-          "time": "Day 2, 11:00 - 12:00",
+          "startTime": "11:00",
+          "endTime": "12:00",
+          "day": 2,
           "tags": ["Serverless", "AWS Lambda", "Cloud Computing"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -299,7 +324,9 @@
               "picture": "https://example.com/williamjohnson.jpg"
             }
           ],
-          "time": "Day 2, 12:00 - 13:00",
+          "startTime": "12:00",
+          "endTime": "13:00",
+          "day": 2,
           "tags": [
             "Microservices",
             "Event-Driven Architecture",
@@ -323,7 +350,9 @@
               "picture": "https://example.com/oliviasmith.jpg"
             }
           ],
-          "time": "Day 2, 13:00 - 14:00",
+          "startTime": "13:00",
+          "endTime": "14:00",
+          "day": 2,
           "tags": ["Backend Development", "GraphQL", "Real-Time APIs"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -343,7 +372,9 @@
               "picture": "https://example.com/christopherwilson.jpg"
             }
           ],
-          "time": "Day 2, 14:00 - 15:00",
+          "startTime": "14:00",
+          "endTime": "15:00",
+          "day": 2,
           "tags": [
             "Backend Development",
             "Distributed Systems",
@@ -374,7 +405,9 @@
               "picture": "https://example.com/sarahjohnson.jpg"
             }
           ],
-          "time": "Day 1, 12:00 - 13:00",
+          "startTime": "12:00",
+          "endTime": "13:00",
+          "day": 1,
           "tags": ["Progressive Web Apps", "React", "Web Development"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -394,7 +427,9 @@
               "picture": "https://example.com/laurawilson.jpg"
             }
           ],
-          "time": "Day 1, 11:00 - 12:00",
+          "startTime": "11:00",
+          "endTime": "12:00",
+          "day": 1,
           "tags": ["Frontend Development", "React", "Reactive Programming"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -414,7 +449,9 @@
               "picture": "https://example.com/danielanderson.jpg"
             }
           ],
-          "time": "Day 1, 12:00 - 13:00",
+          "startTime": "12:00",
+          "endTime": "13:00",
+          "day": 1,
           "tags": ["Accessibility", "Inclusive Design", "Frontend"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -434,7 +471,9 @@
               "picture": "https://example.com/jamesthompson.jpg"
             }
           ],
-          "time": "Day 1, 13:00 - 14:00",
+          "startTime": "13:00",
+          "endTime": "14:00",
+          "day": 1,
           "tags": ["Frontend Development", "Redux", "State Management"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -454,7 +493,9 @@
               "picture": "https://example.com/emilywilson.jpg"
             }
           ],
-          "time": "Day 1, 14:00 - 15:00",
+          "startTime": "14:00",
+          "endTime": "15:00",
+          "day": 1,
           "tags": ["Web Components", "Custom Elements", "Web Development"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -474,7 +515,9 @@
               "picture": "https://example.com/michaelthompson.jpg"
             }
           ],
-          "time": "Day 2, 11:00 - 12:00",
+          "startTime": "11:00",
+          "endTime": "12:00",
+          "day": 2,
           "tags": [
             "Progressive Web Apps",
             "Web Development",
@@ -498,7 +541,9 @@
               "picture": "https://example.com/sophiawilson.jpg"
             }
           ],
-          "time": "Day 2, 12:00 - 13:00",
+          "startTime": "12:00",
+          "endTime": "13:00",
+          "day": 2,
           "tags": [
             "Frontend Development",
             "Vue.js",
@@ -522,7 +567,9 @@
               "picture": "https://example.com/thomasanderson.jpg"
             }
           ],
-          "time": "Day 2, 13:00 - 14:00",
+          "startTime": "13:00",
+          "endTime": "14:00",
+          "day": 2,
           "tags": ["Web Performance", "User Experience", "Optimization"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -542,7 +589,9 @@
               "picture": "https://example.com/benjamindavis.jpg"
             }
           ],
-          "time": "Day 2, 14:00 - 15:00",
+          "startTime": "14:00",
+          "endTime": "15:00",
+          "day": 2,
           "tags": ["Frontend Development", "React", "State Management"],
           "webExLink": "https://example.com/webex-link"
         }
@@ -569,7 +618,9 @@
               "picture": "https://example.com/emilydavis.jpg"
             }
           ],
-          "time": "Day 1, 13:00 - 14:00",
+          "startTime": "13:00",
+          "endTime": "14:00",
+          "day": 1,
           "tags": ["DevOps", "Infrastructure as Code", "Terraform"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -589,7 +640,9 @@
               "picture": "https://example.com/robertmiller.jpg"
             }
           ],
-          "time": "Day 1, 11:00 - 12:00",
+          "startTime": "11:00",
+          "endTime": "12:00",
+          "day": 1,
           "tags": ["DevOps", "Continuous Integration", "Continuous Deployment"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -609,7 +662,9 @@
               "picture": "https://example.com/sarahdavis.jpg"
             }
           ],
-          "time": "Day 1, 12:00 - 13:00",
+          "startTime": "12:00",
+          "endTime": "13:00",
+          "day": 1,
           "tags": ["DevOps", "Infrastructure as Code", "Terraform"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -629,7 +684,9 @@
               "picture": "https://example.com/johnwilson.jpg"
             }
           ],
-          "time": "Day 1, 13:00 - 14:00",
+          "startTime": "13:00",
+          "endTime": "14:00",
+          "day": 1,
           "tags": ["DevOps", "Monitoring", "Observability"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -649,7 +706,9 @@
               "picture": "https://example.com/jessicamiller.jpg"
             }
           ],
-          "time": "Day 1, 16:00 - 17:00",
+          "startTime": "16:00",
+          "endTime": "17:00",
+          "day": 1,
           "tags": ["DevOps", "Kubernetes", "Containerization"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -669,7 +728,9 @@
               "picture": "https://example.com/emmajohnson.jpg"
             }
           ],
-          "time": "Day 2, 11:00 - 12:00",
+          "startTime": "11:00",
+          "endTime": "12:00",
+          "day": 2,
           "tags": ["DevOps", "Infrastructure as Code", "AWS CloudFormation"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -689,7 +750,9 @@
               "picture": "https://example.com/ethanwilson.jpg"
             }
           ],
-          "time": "Day 2, 12:00 - 13:00",
+          "startTime": "12:00",
+          "endTime": "13:00",
+          "day": 2,
           "tags": ["DevOps", "Container Security", "Best Practices"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -709,7 +772,9 @@
               "picture": "https://example.com/gracethompson.jpg"
             }
           ],
-          "time": "Day 2, 13:00 - 14:00",
+          "startTime": "13:00",
+          "endTime": "14:00",
+          "day": 2,
           "tags": ["DevOps", "Application Monitoring", "ELK Stack"],
           "webExLink": "https://example.com/webex-link"
         },
@@ -729,7 +794,9 @@
               "picture": "https://example.com/samuelwilson.jpg"
             }
           ],
-          "time": "Day 2, 14:00 - 15:00",
+          "startTime": "14:00",
+          "endTime": "15:00",
+          "day": 2,
           "tags": [
             "DevOps",
             "Infrastructure Orchestration",
@@ -760,7 +827,9 @@
               "picture": "https://example.com/michaelaanderson.jpg"
             }
           ],
-          "time": "Day 1, 14:00 - 15:00",
+          "startTime": "14:00",
+          "endTime": "15:00",
+          "day": 1,
           "tags": [
             "Artificial Intelligence",
             "Natural Language Processing",
@@ -784,7 +853,9 @@
               "picture": "https://example.com/rachelthompson.jpg"
             }
           ],
-          "time": "Day 1, 11:00 - 12:00",
+          "startTime": "11:00",
+          "endTime": "12:00",
+          "day": 1,
           "tags": [
             "Artificial Intelligence",
             "Computer Vision",
@@ -808,7 +879,9 @@
               "picture": "https://example.com/danielsmith.jpg"
             }
           ],
-          "time": "Day 1, 12:00 - 13:00",
+          "startTime": "12:00",
+          "endTime": "13:00",
+          "day": 1,
           "tags": [
             "Artificial Intelligence",
             "Natural Language Processing",
@@ -832,7 +905,9 @@
               "picture": "https://example.com/andrewwilson.jpg"
             }
           ],
-          "time": "Day 1, 13:00 - 14:00",
+          "startTime": "13:00",
+          "endTime": "14:00",
+          "day": 1,
           "tags": [
             "Artificial Intelligence",
             "Generative Adversarial Networks",
@@ -856,7 +931,9 @@
               "picture": "https://example.com/alexjohnson.jpg"
             }
           ],
-          "time": "Day 1, 14:00 - 15:00",
+          "startTime": "14:00",
+          "endTime": "15:00",
+          "day": 1,
           "tags": [
             "Artificial Intelligence",
             "Reinforcement Learning",
@@ -880,7 +957,9 @@
               "picture": "https://example.com/sophiewilson.jpg"
             }
           ],
-          "time": "Day 2, 11:00 - 12:00",
+          "startTime": "11:00",
+          "endTime": "12:00",
+          "day": 2,
           "tags": [
             "Artificial Intelligence",
             "Deep Learning",
@@ -904,7 +983,9 @@
               "picture": "https://example.com/jacobjohnson.jpg"
             }
           ],
-          "time": "Day 2, 12:00 - 13:00",
+          "startTime": "12:00",
+          "endTime": "13:00",
+          "day": 2,
           "tags": [
             "Artificial Intelligence",
             "Natural Language Processing",
@@ -928,7 +1009,9 @@
               "picture": "https://example.com/nathandavis.jpg"
             }
           ],
-          "time": "Day 2, 13:00 - 14:00",
+          "startTime": "13:00",
+          "endTime": "14:00",
+          "day": 2,
           "tags": [
             "Artificial Intelligence",
             "Reinforcement Learning",
@@ -952,7 +1035,9 @@
               "picture": "https://example.com/sophiamiller.jpg"
             }
           ],
-          "time": "Day 2, 14:00 - 15:00",
+          "startTime": "14:00",
+          "endTime": "15:00",
+          "day": 2,
           "tags": [
             "Artificial Intelligence",
             "Transfer Learning",

@@ -1,9 +1,10 @@
+import { BreakpointObserver } from '@angular/cdk/layout';
 import { HttpClient } from '@angular/common/http';
 import { Injectable, WritableSignal, signal } from '@angular/core';
 import { Day, Stage } from 'src/types';
 
 const times = [
-  '9:00 - 10:00',
+  '09:00 - 10:00',
   '10:00 - 11:00',
   '11:00 - 12:00',
   '12:00 - 13:00',
@@ -22,9 +23,16 @@ export class DataService {
   stages: WritableSignal<Stage[]> = signal([]);
   days: WritableSignal<Day[]> = signal([]);
   times: string[] = times;
+  mobileView: boolean = false;
 
-  constructor(private http: HttpClient) {
+  constructor(
+    private http: HttpClient,
+    private responsive: BreakpointObserver
+  ) {
     this.loadData();
+    this.responsive
+      .observe('(max-width: 992px)')
+      .subscribe((result) => (this.mobileView = result.matches));
   }
 
   private loadData() {

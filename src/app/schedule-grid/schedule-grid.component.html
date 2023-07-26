@@ -1,12 +1,8 @@
 <div
-  *ngIf="
-    stages().length > 0 &&
-    day &&
-    getFilteredStages(stageFilter) as filteredStages
-  "
+  *ngIf="stages().length > 0 && day && getFilteredStages() as filteredStages"
   class="scroll-container tab__content table-outline"
 >
-  <div *ngIf="mobileView">
+  <div *ngIf="dataService.mobileView">
     <nx-formfield
       label="Filter stages"
       appearance="outline"
@@ -21,62 +17,14 @@
       </nx-dropdown>
     </nx-formfield>
   </div>
+
   <div class="timetable-grid">
-    <div nxRow *ngIf="!mobileView">
-      <div nxCol="1"></div>
-      <ng-container *ngFor="let stage of filteredStages">
-        <div nxCol="2" class="stage-heading center">{{ stage.name }}</div>
-      </ng-container>
-    </div>
-    <ng-container *ngFor="let time of times">
-      <div
-        *ngIf="getTalksByTime(day, time).length > 0"
-        nxLayout="grid nogutters"
-      >
-        <div nxRow>
-          <!-- Defining different nxCol sizes for different display sizes -->
-          <div nxCol="12,12,12,1" class="time">{{ time }}</div>
-          <ng-container *ngFor="let stage of filteredStages">
-            <div
-              *ngVar="getTalkByStageAndTime(stage, day, time) as talk"
-              [nxCol]="'12,12,12,' + (talk ? stage.size.toString() : '2')"
-              class="card-container"
-            >
-              <ng-container *ngIf="talk">
-                <nx-card
-                  [highlight]="stage.name.includes('Main')"
-                  [class]="stage.color"
-                  class="talk-card button"
-                  (click)="dialogService.openTalkDialog(talk)"
-                >
-                  <!-- <div nxHighlightHeader><b>MAIN STAGE</b></div> -->
-                  <div class="card-content">
-                    <nx-badge *ngIf="mobileView" class="purple_bg">{{
-                      stage.name
-                    }}</nx-badge>
-                    <h3>
-                      {{ talk.title }}
-                    </h3>
-                    <p nxCopytext="normal">
-                      {{ talk.description }}
-                    </p>
-                    <nx-link nxStyle="icon-left">
-                      <!-- Using event#stopPropagation to stop it from executing card click -->
-                      <a
-                        [href]="talk.webExLink"
-                        (click)="$event.stopPropagation()"
-                      >
-                        <nx-icon name="camera" font="fa" size="s"></nx-icon>
-                        Join here!
-                      </a>
-                    </nx-link>
-                  </div>
-                </nx-card>
-              </ng-container>
-            </div>
-          </ng-container>
-        </div>
-      </div>
-    </ng-container>
+    <app-main-stage [stage]="stages()[0]" [talks]="getStartMainStageTalks()" />
+    <app-common-stages
+      style="margin: 10px"
+      [day]="day"
+      [filteredStages]="getCommonStages()"
+    />
+    <app-main-stage [stage]="stages()[0]" [talks]="getEndMainStageTalks()" />
   </div>
 </div>

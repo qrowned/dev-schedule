@@ -9,7 +9,9 @@ export interface Talk {
   title: string;
   description: string;
   presenters: Presenter[];
-  time: string;
+  startTime: string;
+  endTime: string;
+  day: number;
   tags: string[];
   webExLink: string;
 }
@@ -31,4 +33,9 @@ export interface SocialMedia {
 export interface Day {
   id: number;
   date: Date;
+}
+
+export enum Sector {
+  START,
+  END,
 }
