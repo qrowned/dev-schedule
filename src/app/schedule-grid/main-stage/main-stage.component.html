@@ -1,7 +1,7 @@
 <div>
   <div nxRow *ngIf="!dataService.mobileView">
     <div nxCol="1"></div>
-    <div nxCol="11" class="stage-heading center">{{ stage.name }}</div>
+    <div nxCol="10" class="stage-heading center">{{ stage.name }}</div>
   </div>
   <ng-container *ngFor="let time of times">
     <div nxRow *ngIf="getTalksByTime(time).length > 0">
@@ -9,7 +9,7 @@
       <ng-container>
         <div
           *ngVar="getTalksByTime(time)[0] as talk"
-          [nxCol]="dataService.mobileView ? '12' : '2.5'"
+          [nxCol]="dataService.mobileView ? '12' : '10'"
           class="card-container"
         >
           <ng-container>
